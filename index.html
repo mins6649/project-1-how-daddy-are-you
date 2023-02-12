@@ -20,25 +20,53 @@
                 <h3> <!--PROMPT--> </h3>
                 <!--FORM: for inputing punchline-->
                 <form id="user-punchline-form">
-                    <input id="user-name" type="text" />
-                    <input id="user-punchline" type="text" />
+                    <input id="user-name" type="text" placeholder="Name"/>
+                    <input id="user-punchline" type="text" placeholder="Enter your punchline here Dad"/>
                     <input type="submit" />
                 </form>
             </section>
 
             <!--Where we render the jokes submitted-->
             <section class="jokes">
-                
-
-
+                <div>
+                    <p id="submitted-prompt">
+                        <!-- PROMPT -->
+                    </p>
+                </div>
+                <div class="joke-comparisons-container">
+                    <div id="ai-punchline-container" class="joke-comparisons">
+                        <h3 id="ai-author"class="joke-author"> 
+                            <!-- AI --> 
+                        </h3>
+                        <p id="ai-punchline">
+                            <!--ai answer-->
+                        </p>
+                        <p id="ai-punchline-likes">
+                            <!--#of likes-->
+                        </p>
+                    </div>
+                    <div id="user-punchline-container" class="joke-comparisons">
+                        <h3 id="user-author" class="joke-author">
+                             <!-- USER -->
+                        </h3>
+                        <p id="user-punchline">
+                            <!--user answer-->
+                        </p>
+                        <p id="user-punchline-likes">
+                            <!--#of likes-->
+                        </p>
+                    </div>
+                </div>
             </section>
         </div>
 
         <!--THE FLOAT SIDE BAR-->
         <div class="scoreboard-container">
             <!--MOUSE EVENT SPACE, need to create element that will hold information based on mouse events-->
+
             <section class="high-scores">
                 <h2>Most Daddy</h2>
+                    <!--TABLES ARE FINICKY lets talk about whether we use table or we just div everything FOR CSS reasons.-->
             </section>
             <section class="worst-scores">
                 <h2>That's trash</h2>
@@ -46,11 +74,6 @@
             <section class="recent-scores">
                 <h2>Dull Submssions: Do better</h2>
             </section>
-
-
         </div>
-
-        
-
     </body>
 </html>
