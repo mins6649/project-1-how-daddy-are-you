@@ -5,14 +5,14 @@ startJoke()
 function startJoke(){
 fetch ("https://v2.jokeapi.dev/joke/pun?format=json&safe-mode&type=twopart")
 .then ((res)=> res.json())
-.then ((joke) => renderJoke(joke))
+.then ((joke) => renderSetup(joke))
 }
 
 const jokeSetup = document.querySelector("#setup")
 const newJoke = document.querySelector("#newJoke")
 const userForm = document.querySelector("#user-punchline-form")
 
-function renderJoke(joke){
+function renderSetup(joke){
     jokeSetup.textContent=joke.setup
     jokePrompt=joke.setup
     jokeDelivery = joke.delivery
@@ -51,5 +51,4 @@ function addUserToJson(e){
     })
 
     userForm.reset()
-
 }
