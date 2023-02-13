@@ -1,9 +1,12 @@
 let jokePrompt = null
 let jokeDelivery = null
 
+startJoke()
+function startJoke(){
 fetch ("https://v2.jokeapi.dev/joke/pun?format=json&safe-mode&type=twopart")
 .then ((res)=> res.json())
 .then ((joke) => renderJoke(joke))
+}
 
 const jokeSetup = document.querySelector("#setup")
 const newJoke = document.querySelector("#newJoke")
@@ -15,13 +18,15 @@ function renderJoke(joke){
     jokeDelivery = joke.delivery
 }
 
-newJoke.addEventListener("submit", (joke)=> {renderJoke(joke)
-    e.preventDefault()})
+newJoke.addEventListener("submit", (e)=> {
+    e.preventDefault()
+    startJoke()
+})
 
-userForm.addEventListener("submit", (joke)=>addUserToJson(joke))
+userForm.addEventListener("submit", (e)=>addUserToJson(e))
 
-function addUserToJson(joke){
-    joke.preventDefault()
+function addUserToJson(e){
+    e.preventDefault()
 
     jsonData=[]
 
@@ -29,14 +34,14 @@ function addUserToJson(joke){
      prompt: jokePrompt,
      cpuResponse:jokeDelivery,
      cpuLikes: 0,
-     userResponse:joke["user-punchline"].value, 
+     userResponse:e.target["user-punchline"].value, 
      userLikes: 0,
-     userName: joke["user-name"].value
+     userName: e.target["user-name"].value
     }
 
     jsonData.push(userJoker)
 
-    fetch('http://localhost:3000/toys', {
+    fetch('http://localhost:3000/users', {
       method: 'POST',
       headers:{
         'Content-Type': 'application/json',
@@ -45,6 +50,6 @@ function addUserToJson(joke){
       body: JSON.stringify(userJoker)
     })
 
+    userForm.reset()
+
 }
-
-
