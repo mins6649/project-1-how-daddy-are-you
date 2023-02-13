@@ -1,0 +1,31 @@
+{
+    "users" : [
+        {
+            "id": 1,
+            "prompt": "Why did the chicken cross the road?",
+            "cpuResponse": "To get to the other side.",
+            "cpuLikes": 2,
+            "userResponse": "Cuz KFC was on his side.",
+            "userLikes": 4,
+            "username": "Bobby"
+        },
+        {
+            "id": 2,
+            "prompt": "What did the fish say when he swam into the wall?",
+            "cpuResponse": "Dam.",
+            "cpuLikes": 1,
+            "userResponse": "Beeeeeeaaaach.",
+            "userLikes": 10,
+            "username": "Min"
+        },
+        {
+            "id": 3,
+            "prompt": "What do you call a fish with no eyes?",
+            "cpuResponse": "A fsh.",
+            "cpuLikes": 15,
+            "userResponse": "Blind.",
+            "userLikes": 0,
+            "username": "Nick"
+        }
+    ]
+}
