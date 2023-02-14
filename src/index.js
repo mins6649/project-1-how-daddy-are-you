@@ -1,11 +1,15 @@
 let jokePrompt = null
 let jokeDelivery = null
 
+jsonData=[]
+
 startJoke()
+
 function startJoke(){
 fetch ("https://v2.jokeapi.dev/joke/pun?format=json&safe-mode&type=twopart")
 .then ((res)=> res.json())
-.then ((joke) => renderSetup(joke))
+.then ((joke) => 
+    renderSetup(joke))
 }
 
 const jokeSetup = document.querySelector("#setup")
@@ -28,7 +32,7 @@ userForm.addEventListener("submit", (e)=>addUserToJson(e))
 function addUserToJson(e){
     e.preventDefault()
 
-    jsonData=[]
+    
 
     userJoker = {
      prompt: jokePrompt,
@@ -39,7 +43,7 @@ function addUserToJson(e){
      username: e.target["user-name"].value
     }
 
-    jsonData.push(userJoker)
+    jsonData.push(userJoker) // ONLY PUSHES IN A SINGLE JOKE
 
     fetch('http://localhost:3000/users', {
       method: 'POST',
@@ -49,24 +53,11 @@ function addUserToJson(e){
       },
       body: JSON.stringify(userJoker)
     })
-    .then(userForm.reset())
+    .then(() =>{
+        renderJoke(userJoker)
+        userForm.reset()
+    })
 }
-
-    
-
-//global data array (DELETE BELOW BEFORE MERGING)
-let jsonData = [];
-
-
-fetch("http://localhost:3000/users")
-    .then(res=> res.json())
-    .then(data=> {
-        jsonData = data;
-        sortMatches()
-    });
-//DELETE ABOVE BEFORE MERGING
-
-
 
 //Render Scoreboard Fuunctions
 function sortMatches() {
@@ -106,6 +97,9 @@ function sortMatches() {
         "https://teehandy.com/wp-content/uploads/2022/06/t1-206.jpg",
         "https://cdn.spotlightstories.co/wp-content/uploads/2019/08/08002854/vincevaughn.jpg"
     ];
+    console.log(winnerArray)
+    console.log(loserArray)
+    console.log(completeArray)
 
     appendScoreboard(winnerArray, document.getElementById('high-scores'), winnerImageArray);
     appendScoreboard(loserArray, document.getElementById('low-scores'), loserImageArray);
@@ -138,4 +132,79 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
         newRow.append(imgHolder, userName, score)
         element.appendChild(newRow)
     }
+}
+
+//CREATING THE JOKE LIST
+
+fetch("http://localhost:3000/users")
+.then(res => res.json())
+.then(data => {
+    renderAllJokes(data)
+    data.forEach(jokeObj =>{
+        jsonData.push(jokeObj);
+        console.log(jsonData)
+        sortMatches(jsonData)
+    })
+})
+
+function renderAllJokes(data){
+    let onlyTen = [...data].slice(-10);
+    onlyTen.forEach(jokeObj => renderJoke(jokeObj));
+}
+
+function renderJoke(jokeObj){
+    const voteContainer = document.getElementById("voting-container");
+    const aiContainer = document.createElement("div");
+    const userContainer = document.createElement("div");
+    const jokeContainer = document.createElement("div");
+
+    let prompt = document.createElement("h3");
+    let aiTitle = document.createElement("h4");
+    let aiPunchline = document.createElement("p");
+    let aiNumOfLikes = document.createElement("p");
+    let userTitle = document.createElement("h4");
+    let userPunchline = document.createElement("p");
+    let userNumofLikes = document.createElement("p");
+    
+    voteContainer.appendChild(jokeContainer);
+    jokeContainer.append(prompt, aiContainer, userContainer);
+    aiContainer.append(aiTitle, aiPunchline, aiNumOfLikes);
+    userContainer.append(userTitle, userPunchline, userNumofLikes);
+
+    prompt.textContent = jokeObj.prompt;
+    aiTitle.textContent = "The Daddy";
+    aiPunchline.textContent = jokeObj.cpuResponse;
+    aiNumOfLikes.textContent = jokeObj.cpuLikes;
+    userTitle.textContent = "User";
+    userPunchline.textContent = jokeObj.userResponse;
+    userNumofLikes.textContent = jokeObj.userLikes;
+
+    aiContainer.addEventListener("click", () =>{
+        jokeObj.cpuLikes++;
+        aiNumOfLikes.textContent = jokeObj.cpuLikes;
+        updateLikes(jokeObj);
+    })
+    userContainer.addEventListener("click", () =>{ 
+        jokeObj.userLikes++;
+        userNumofLikes.textContent = jokeObj.userLikes;
+        updateLikes(jokeObj);
+    }) 
+
+    jsonData.push(jokeObj);
+    
+    if(jsonData.length > 10){
+        voteContainer.children[0].remove();
+    }
+}
+//patch request for updating likes
+function updateLikes(jokeObj){
+    fetch(`http://localhost:3000/users/${jokeObj.id}`,{
+        method: "PATCH",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(jokeObj)
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
 }

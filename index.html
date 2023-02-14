@@ -17,7 +17,7 @@
             <!--PROMPT: We render the setup and user can input punchline-->
             <section class="create-joke main-section">
                 <h2>Can you beat our Daddy?</h2>
-                <h3 id="setup"> Prompt </h3>
+                <h3 id = "setup"> <!--PROMPT--> </h3>
                 <!--FORM: for inputing punchline-->
                 <form id="user-punchline-form">
                     <input id="user-name" type="text" placeholder="Name"/>
@@ -31,35 +31,10 @@
             <!--Where we render the jokes submitted-->
             <section class="jokes main-section">
                 <hr id="divider">
-                <div>
-                    <p id="submitted-prompt">
-                        <!-- PROMPT -->
-                    </p>
+                <div id="voting-container">
+                    <!-- Prompt, Ai Res, User Res -->
                 </div>
-                <div class="joke-comparisons-container">
-                    <div id="ai-punchline-container" class="joke-comparisons">
-                        <h3 id="ai-author"class="joke-author"> 
-                            <!-- AI --> 
-                        </h3>
-                        <p id="ai-punchline">
-                            <!--ai answer-->
-                        </p>
-                        <p id="ai-punchline-likes">
-                            <!--#of likes-->
-                        </p>
-                    </div>
-                    <div id="user-punchline-container" class="joke-comparisons">
-                        <h3 id="user-author" class="joke-author">
-                             <!-- USER -->
-                        </h3>
-                        <p id="user-punchline">
-                            <!--user answer-->
-                        </p>
-                        <p id="user-punchline-likes">
-                            <!--#of likes-->
-                        </p>
-                    </div>
-                </div>
+                
             </section>
         </div>
 
