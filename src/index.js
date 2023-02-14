@@ -32,8 +32,6 @@ userForm.addEventListener("submit", (e)=>addUserToJson(e))
 function addUserToJson(e){
     e.preventDefault()
 
-    
-
     userJoker = {
      prompt: jokePrompt,
      cpuResponse:jokeDelivery,
@@ -59,16 +57,23 @@ function addUserToJson(e){
     })
 }
 
+
+
+
+let scoreJsonData = [];
+
 //Render Scoreboard Fuunctions
 function sortMatches() {
     //grab elements
+    console.log(scoreJsonData)
+
 
     let winnerArray = [];
     let loserArray = [];
-    let completeArray = [...jsonData];
+    let completeArray = [...scoreJsonData];
 
     // console.log(jsonData)
-    jsonData.forEach(match => {
+    scoreJsonData.forEach(match => {
         if (match.userLikes > match.cpuLikes) {
             winnerArray.push(match);
         }
@@ -97,10 +102,8 @@ function sortMatches() {
         "https://teehandy.com/wp-content/uploads/2022/06/t1-206.jpg",
         "https://cdn.spotlightstories.co/wp-content/uploads/2019/08/08002854/vincevaughn.jpg"
     ];
-    console.log(winnerArray)
-    console.log(loserArray)
-    console.log(completeArray)
 
+    console.log(completeArray)
     appendScoreboard(winnerArray, document.getElementById('high-scores'), winnerImageArray);
     appendScoreboard(loserArray, document.getElementById('low-scores'), loserImageArray);
     appendScoreboard(completeArray, document.getElementById('recent-scores'));
@@ -110,7 +113,7 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
     //the over-arching loop to create three rows 
     for (let i = 0; i < 3; i++) {
         const newRow = document.createElement('tr')
-        console.log(scoreArray[i])
+        console.log("pass thru append scoreboard")
 
         //left td
         const imgHolder = document.createElement('td')
@@ -134,16 +137,19 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
     }
 }
 
+
+
 //CREATING THE JOKE LIST
 
 fetch("http://localhost:3000/users")
 .then(res => res.json())
 .then(data => {
+    scoreJsonData = [...data].slice(0, -10)
+    sortMatches()
+
     renderAllJokes(data)
     data.forEach(jokeObj =>{
         jsonData.push(jokeObj);
-        console.log(jsonData)
-        sortMatches(jsonData)
     })
 })
 
@@ -206,5 +212,4 @@ function updateLikes(jokeObj){
         body: JSON.stringify(jokeObj)
     })
     .then(res => res.json())
-    .then(data => console.log(data))
 }

@@ -66,17 +66,10 @@
     {
       "prompt": "Which is faster, Hot or cold?",
       "cpuResponse": "Hot, because you can catch a cold",
-<<<<<<< HEAD
       "cpuLikes": 22,
       "userResponse": "nonono",
       "userLikes": 10,
       "username": "John",
-=======
-      "cpuLikes": 1,
-      "userResponse": "",
-      "userLikes": 1,
-      "userName": "",
->>>>>>> cedb44ed32d4d275f78e80214af11529d7400603
       "id": 8
     },
     {
@@ -103,7 +96,7 @@
       "cpuLikes": 0,
       "userResponse": "ohahahahofheg",
       "userLikes": 0,
-      "userName": "justin",
+      "username": "justin",
       "id": 11
     },
     {
@@ -112,7 +105,7 @@
       "cpuLikes": 0,
       "userResponse": "LOVES TO CODE",
       "userLikes": 0,
-      "userName": "NICK",
+      "username": "NICK",
       "id": 12
     },
     {
@@ -121,7 +114,7 @@
       "cpuLikes": 0,
       "userResponse": "CHEESE EVERYWHERE",
       "userLikes": 0,
-      "userName": "love",
+      "username": "love",
       "id": 13
     },
     {
@@ -130,7 +123,7 @@
       "cpuLikes": 0,
       "userResponse": "we are now divorced.",
       "userLikes": 0,
-      "userName": "mike",
+      "username": "mike",
       "id": 14
     },
     {
@@ -139,7 +132,7 @@
       "cpuLikes": 0,
       "userResponse": "dont drink",
       "userLikes": 0,
-      "userName": "ivy",
+      "username": "ivy",
       "id": 15
     },
     {
@@ -148,7 +141,7 @@
       "cpuLikes": 0,
       "userResponse": "Its 5oclock somewhere haha",
       "userLikes": 0,
-      "userName": "Poppy",
+      "username": "Poppy",
       "id": 16
     },
     {
@@ -157,7 +150,7 @@
       "cpuLikes": 0,
       "userResponse": "mind your own business",
       "userLikes": 0,
-      "userName": "chicken",
+      "username": "chicken",
       "id": 17
     },
     {
@@ -166,7 +159,7 @@
       "cpuLikes": 0,
       "userResponse": "jdflkasdjflad",
       "userLikes": 0,
-      "userName": "jake",
+      "username": "jake",
       "id": 18
     }
   ]
