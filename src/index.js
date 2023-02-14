@@ -57,21 +57,6 @@ function addUserToJson(e){
     .then(userForm.reset())
 }
 
-    
-
-//global data array (DELETE BELOW BEFORE MERGING)
-let jsonData = [];
-
-
-fetch("http://localhost:3000/users")
-    .then(res=> res.json())
-    .then(data=> {
-        jsonData = data;
-        sortMatches()
-    });
-//DELETE ABOVE BEFORE MERGING
-
-
 
 //Render Scoreboard Fuunctions
 function sortMatches() {
