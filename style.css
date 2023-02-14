@@ -1,6 +1,14 @@
+/* COLOR SCHEME:
+Persian orange: DC965A
+Viridian: 5B9279
+Ghost White: F7F5FB
+COYOTE: 7C6354
+BERKELY BLUE: 12355B */
+
 body {
+
     font-family: Lato, sans-serif;
-    background-color: lemonchiffon;
+    background-color: #DC965A;
 }
 
 .scoreboard-container {
@@ -14,6 +22,7 @@ body {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   text-align: center;
+  background-color: #DC965A;
 }
 
 .side-bar-container {
@@ -28,15 +37,14 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 385px;
-
 }
 
 th {
-    background-color: lightcoral;
+    font-size: 16pt;
 }
 
 tr:hover{
-    background-color: deeppink;
+    background-color: #12355B;
 }
 
 td {
@@ -49,9 +57,9 @@ img {
 }
 
 #daddy-says-container {
-    height: 250px;
+    height: 300px;
     width: 350px;
-    background-color: aliceblue;
+    background-color: #F7F5FB;
     border: 20px;
     border-bottom-left-radius: 20px;
     border-radius: 20px;
@@ -77,5 +85,30 @@ h1 {
 
 #divider {
     width: 90%;
-    border-color: darkgrey;
+    border-color: #12355B;
+}
+
+input {
+    margin-top: auto;
+    height: 40px;
+    width: 200px;
+    font-size: 12pt;
+    border-radius: 40px;
+}
+#user-punchline {
+    width: 400px;
+}
+#user-punchline-form {
+    border-color: #12355B;
+    border: 1px;
+}
+#newJoke {
+    text-align: right;
+    margin-right: 50px;
+}
+.buttons {
+    background-color: #F7F5FB;
+    border-radius: 40px;
+    width:  150px;
+    height: 40px;
 }

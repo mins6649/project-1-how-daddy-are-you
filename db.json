@@ -75,9 +75,9 @@
     {
       "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
       "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
-      "cpuLikes": 5,
+      "cpuLikes": 7,
       "userResponse": "Depends on the kind of milk...",
-      "userLikes": 6,
+      "userLikes": 9,
       "username": "Happy",
       "id": 9
     },
@@ -138,9 +138,9 @@
     {
       "prompt": "My employer came running to me and said, \"I was looking for you all day! Where the hell have you been?\"",
       "cpuResponse": "I replied, \"Good employees are hard to find.\"",
-      "cpuLikes": 0,
+      "cpuLikes": 1,
       "userResponse": "Its 5oclock somewhere haha",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "Poppy",
       "id": 16
     },
