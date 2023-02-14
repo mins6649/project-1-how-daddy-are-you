@@ -1,31 +1,94 @@
 {
-    "users" : [
-        {
-            "id": 1,
-            "prompt": "Why did the chicken cross the road?",
-            "cpuResponse": "To get to the other side.",
-            "cpuLikes": 2,
-            "userResponse": "Cuz KFC was on his side.",
-            "userLikes": 4,
-            "username": "Bobby"
-        },
-        {
-            "id": 2,
-            "prompt": "What did the fish say when he swam into the wall?",
-            "cpuResponse": "Dam.",
-            "cpuLikes": 1,
-            "userResponse": "Beeeeeeaaaach.",
-            "userLikes": 10,
-            "username": "Min"
-        },
-        {
-            "id": 3,
-            "prompt": "What do you call a fish with no eyes?",
-            "cpuResponse": "A fsh.",
-            "cpuLikes": 15,
-            "userResponse": "Blind.",
-            "userLikes": 0,
-            "username": "Nick"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "prompt": "Why did the chicken cross the road?",
+      "cpuResponse": "To get to the other side.",
+      "cpuLikes": 2,
+      "userResponse": "Cuz KFC was on his side.",
+      "userLikes": 4,
+      "username": "Bobby"
+    },
+    {
+      "id": 2,
+      "prompt": "What did the fish say when he swam into the wall?",
+      "cpuResponse": "Dam.",
+      "cpuLikes": 1,
+      "userResponse": "Beeeeeeaaaach.",
+      "userLikes": 10,
+      "username": "Min"
+    },
+    {
+      "id": 3,
+      "prompt": "What do you call a fish with no eyes?",
+      "cpuResponse": "A fsh.",
+      "cpuLikes": 15,
+      "userResponse": "Blind.",
+      "userLikes": 1,
+      "username": "Nick"
+    },
+    {
+      "id": 4,
+      "prompt": "What do you call a fish with no eyes?",
+      "cpuResponse": "A fsh.",
+      "cpuLikes": 16,
+      "userResponse": "Blind.",
+      "userLikes": 11,
+      "username": "Nick2"
+    },
+    {
+      "id": 5,
+      "prompt": "What do you call a fish with no eyes?",
+      "cpuResponse": "A fsh.",
+      "cpuLikes": 17,
+      "userResponse": "Blind.",
+      "userLikes": 3,
+      "username": "Nick3"
+    },
+    {
+      "id": 6,
+      "prompt": "What did the fish say when he swam into the wall?",
+      "cpuResponse": "Dam.",
+      "cpuLikes": 1,
+      "userResponse": "Beeeeeeaaaach.",
+      "userLikes": 11,
+      "username": "Min2"
+    },
+    {
+      "prompt": "Which is faster, Hot or cold?",
+      "cpuResponse": "Hot, because you can catch a cold",
+      "cpuLikes": 0,
+      "userResponse": "",
+      "userLikes": 0,
+      "userName": "",
+      "id": 7
+    },
+    {
+      "prompt": "Which is faster, Hot or cold?",
+      "cpuResponse": "Hot, because you can catch a cold",
+      "cpuLikes": 0,
+      "userResponse": "",
+      "userLikes": 0,
+      "userName": "",
+      "id": 8
+    },
+    {
+      "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
+      "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
+      "cpuLikes": 0,
+      "userResponse": "Depends on the kind of milk...",
+      "userLikes": 0,
+      "userName": "Happy",
+      "id": 9
+    },
+    {
+      "prompt": "You see, mountains aren't just funny.",
+      "cpuResponse": "They are hill areas.",
+      "cpuLikes": 0,
+      "userResponse": "They are tall too.",
+      "userLikes": 0,
+      "userName": "Sad",
+      "id": 10
+    }
+  ]
 }
