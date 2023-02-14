@@ -36,7 +36,7 @@ function addUserToJson(e){
      cpuLikes: 0,
      userResponse:e.target["user-punchline"].value, 
      userLikes: 0,
-     userName: e.target["user-name"].value
+     username: e.target["user-name"].value
     }
 
     jsonData.push(userJoker)
@@ -116,6 +116,7 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
     //the over-arching loop to create three rows 
     for (let i = 0; i < 3; i++) {
         const newRow = document.createElement('tr')
+        console.log(scoreArray[i])
 
         //left td
         const imgHolder = document.createElement('td')
