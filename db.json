@@ -4,460 +4,163 @@
       "id": 1,
       "prompt": "Why did the chicken cross the road?",
       "cpuResponse": "To get to the other side.",
-      "cpuLikes": 8,
+      "cpuLikes": 2,
       "userResponse": "Cuz KFC was on his side.",
-      "userLikes": 6,
+      "userLikes": 4,
       "username": "Bobby"
     },
     {
       "id": 2,
       "prompt": "What did the fish say when he swam into the wall?",
       "cpuResponse": "Dam.",
-      "cpuLikes": 6,
+      "cpuLikes": 1,
       "userResponse": "Beeeeeeaaaach.",
-      "userLikes": 11,
+      "userLikes": 10,
       "username": "Min"
     },
     {
       "id": 3,
       "prompt": "What do you call a fish with no eyes?",
       "cpuResponse": "A fsh.",
-      "cpuLikes": 18,
+      "cpuLikes": 15,
       "userResponse": "Blind.",
-      "userLikes": 2,
+      "userLikes": 1,
       "username": "Nick"
     },
     {
-      "prompt": "I can't believe I got fired from the calendar factory.",
-      "cpuResponse": "All I did was take a day off.",
-      "cpuLikes": 4,
-      "userResponse": "ohohoh",
-      "userLikes": 0,
-      "userName": "jane",
-      "id": 4
+      "id": 4,
+      "prompt": "What do you call a fish with no eyes?",
+      "cpuResponse": "A fsh.",
+      "cpuLikes": 16,
+      "userResponse": "Blind.",
+      "userLikes": 11,
+      "username": "Nick2"
     },
     {
-      "prompt": "A Roman walks into a bar and raises 2 fingers and says to the bartender...",
-      "cpuResponse": "\"Five beers, please.\"",
-      "cpuLikes": 0,
-      "userResponse": "because 7 8 9",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 5
+      "id": 5,
+      "prompt": "What do you call a fish with no eyes?",
+      "cpuResponse": "A fsh.",
+      "cpuLikes": 17,
+      "userResponse": "Blind.",
+      "userLikes": 3,
+      "username": "Nick3"
     },
     {
-      "prompt": "What do you call a witch at the beach?",
-      "cpuResponse": "A Sandwich.",
-      "cpuLikes": 0,
-      "userResponse": "sand",
-      "userLikes": 0,
-      "userName": "jane",
-      "id": 6
+      "id": 6,
+      "prompt": "What did the fish say when he swam into the wall?",
+      "cpuResponse": "Dam.",
+      "cpuLikes": 1,
+      "userResponse": "Beeeeeeaaaach.",
+      "userLikes": 11,
+      "username": "Min2"
     },
     {
-      "prompt": "What kind of car did Whitney Houston drive?",
-      "cpuResponse": "A Hyundaiiiiiiiiiiii",
+      "prompt": "Which is faster, Hot or cold?",
+      "cpuResponse": "Hot, because you can catch a cold",
       "cpuLikes": 0,
-      "userResponse": "the bodyguard",
+      "userResponse": "",
       "userLikes": 0,
-      "userName": "mj",
+      "userName": "",
       "id": 7
     },
     {
-      "prompt": "Why do cows wear bells?",
-      "cpuResponse": "Because their horns don't work!",
-      "cpuLikes": 0,
-      "userResponse": "moo",
-      "userLikes": 1,
-      "userName": "jm",
-      "id": 8
-    },
-    {
-      "prompt": "I just got fired from my job at the keyboard factory.",
-      "cpuResponse": "They told me I wasn't putting in enough shifts.",
-      "cpuLikes": 0,
-      "userResponse": "hoho",
-      "userLikes": 0,
-      "userName": "barb",
-      "id": 9
-    },
-    {
-      "prompt": "Has COVID-19 forced you to wear glasses and a mask at the same time?",
-      "cpuResponse": "If so, you may be entitled to condensation.",
-      "cpuLikes": 0,
-      "userResponse": "no i dead",
-      "userLikes": 0,
-      "userName": "phil",
-      "id": 10
-    },
-    {
-      "prompt": "So I made a graph of all my past relationships.",
-      "cpuResponse": "It has an ex axis and a why axis.",
+      "prompt": "Which is faster, Hot or cold?",
+      "cpuResponse": "Hot, because you can catch a cold",
       "cpuLikes": 1,
       "userResponse": "",
       "userLikes": 1,
       "userName": "",
-      "id": 11
-    },
-    {
-      "prompt": "Why did the koala get rejected?",
-      "cpuResponse": "Because he did not have any koalafication.",
-      "cpuLikes": 0,
-      "userResponse": "he did not have the correct koalafications",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 12
-    },
-    {
-      "prompt": "Which part of the hospital has the least privacy?",
-      "cpuResponse": "The ICU.",
-      "cpuLikes": 0,
-      "userResponse": "hallway",
-      "userLikes": 0,
-      "userName": "bobby",
-      "id": 13
-    },
-    {
-      "prompt": "Why did the chicken cross the road, roll in the mud and cross the road again?",
-      "cpuResponse": "He was a dirty double-crosser!",
-      "cpuLikes": 0,
-      "userResponse": "popeye",
-      "userLikes": 0,
-      "userName": "sarah",
-      "id": 14
-    },
-    {
-      "prompt": "What did the cell say when his sister cell stepped on his foot?",
-      "cpuResponse": "Mitosis.",
-      "cpuLikes": 0,
-      "userResponse": "mi toe sis",
-      "userLikes": 0,
-      "userName": "paul",
-      "id": 15
-    },
-    {
-      "prompt": "What do you call a witch at the beach?",
-      "cpuResponse": "A Sandwich.",
-      "cpuLikes": 0,
-      "userResponse": "earthbender",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 16
+      "id": 8
     },
     {
       "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
       "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
       "cpuLikes": 0,
-      "userResponse": "yes",
+      "userResponse": "Depends on the kind of milk...",
       "userLikes": 0,
-      "userName": "justin",
-      "id": 17
+      "userName": "Happy",
+      "id": 9
     },
     {
-      "prompt": "A Roman walks into a bar and raises 2 fingers and says to the bartender...",
-      "cpuResponse": "\"Five beers, please.\"",
+      "prompt": "You see, mountains aren't just funny.",
+      "cpuResponse": "They are hill areas.",
       "cpuLikes": 0,
-      "userResponse": "5 drinks plz",
+      "userResponse": "They are tall too.",
       "userLikes": 0,
-      "userName": "min",
-      "id": 18
-    },
-    {
-      "prompt": "What kind of car did Whitney Houston drive?",
-      "cpuResponse": "A Hyundaiiiiiiiiiiii",
-      "cpuLikes": 0,
-      "userResponse": "no",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 19
-    },
-    {
-      "prompt": "No matter how kind you are...",
-      "cpuResponse": "German kids are always Kinder.",
-      "cpuLikes": 0,
-      "userResponse": "eat",
-      "userLikes": 0,
-      "userName": "namu",
-      "id": 20
-    },
-    {
-      "prompt": "To prove he was right, the flat-earther walked to the end of the Earth.",
-      "cpuResponse": "He eventually came around.",
-      "cpuLikes": 0,
-      "userResponse": "to this day he is still walking",
-      "userLikes": 0,
-      "userName": "min",
-      "id": 21
-    },
-    {
-      "prompt": "Did you hear about the claustrophobic astronaut?",
-      "cpuResponse": "He just needed a little space.",
-      "cpuLikes": 0,
-      "userResponse": "no",
-      "userLikes": 0,
-      "userName": "lisa",
-      "id": 22
-    },
-    {
-      "prompt": "What do you call a cow with no legs?",
-      "cpuResponse": "Ground beef.",
-      "cpuLikes": 0,
-      "userResponse": "ground beef",
-      "userLikes": 0,
-      "userName": "sally",
-      "id": 23
-    },
-    {
-      "prompt": "Where do sick cruise ships go to get healthy?",
-      "cpuResponse": "The dock!",
-      "cpuLikes": 0,
-      "userResponse": "the doctor silly",
-      "userLikes": 0,
-      "userName": "jane",
-      "id": 24
-    },
-    {
-      "prompt": "No matter how kind you are...",
-      "cpuResponse": "German kids are always Kinder.",
-      "cpuLikes": 0,
-      "userResponse": "you will go to hell",
-      "userLikes": 0,
-      "userName": "robbie",
-      "id": 25
-    },
-    {
-      "prompt": "What's the best thing about Switzerland?",
-      "cpuResponse": "I don't know, but the flag is a big plus.",
-      "cpuLikes": 0,
-      "userResponse": "fondue",
-      "userLikes": 0,
-      "userName": "bobbie",
-      "id": 26
-    },
-    {
-      "prompt": "Do you know what killed the man who had a two ton pumpkin fall on him?",
-      "cpuResponse": "He was squashed.",
-      "cpuLikes": 0,
-      "userResponse": "the seeds",
-      "userLikes": 0,
-      "userName": "nick",
-      "id": 27
+      "userName": "Sad",
+      "id": 10
     },
     {
       "prompt": "I was feeling depressed, my wife put her hand on my back and said \"Earth.\"",
       "cpuResponse": "It meant the world to me.",
       "cpuLikes": 0,
-      "userResponse": "flat ass",
+      "userResponse": "ohahahahofheg",
       "userLikes": 0,
-      "userName": "tim",
-      "id": 28
+      "userName": "justin",
+      "id": 11
     },
     {
-      "prompt": "Has COVID-19 forced you to wear glasses and a mask at the same time?",
-      "cpuResponse": "If so, you may be entitled to condensation.",
+      "prompt": "I walked into a bar once.",
+      "cpuResponse": "It really hurt my head.",
       "cpuLikes": 0,
-      "userResponse": "condensation",
+      "userResponse": "LOVES TO CODE",
       "userLikes": 0,
-      "userName": "timmy",
-      "id": 29
+      "userName": "NICK",
+      "id": 12
     },
     {
-      "prompt": "What happened to the man who got behind on payments to his exorcist?",
-      "cpuResponse": "He got repossessed.",
+      "prompt": "Did you hear about the cheese factory that exploded in France?",
+      "cpuResponse": "There was nothing but de brie.",
       "cpuLikes": 0,
-      "userResponse": "idk man",
+      "userResponse": "CHEESE EVERYWHERE",
       "userLikes": 0,
-      "userName": "bobby",
-      "id": 30
+      "userName": "love",
+      "id": 13
+    },
+    {
+      "prompt": "The other day my wife asked me to pass her lipstick, but I accidentally gave her a glue stick.",
+      "cpuResponse": "She still isn't talking to me.",
+      "cpuLikes": 0,
+      "userResponse": "we are now divorced.",
+      "userLikes": 0,
+      "userName": "mike",
+      "id": 14
+    },
+    {
+      "prompt": "The past, the present and the future walk into a bar.",
+      "cpuResponse": "It was tense.",
+      "cpuLikes": 0,
+      "userResponse": "dont drink",
+      "userLikes": 0,
+      "userName": "ivy",
+      "id": 15
     },
     {
       "prompt": "My employer came running to me and said, \"I was looking for you all day! Where the hell have you been?\"",
       "cpuResponse": "I replied, \"Good employees are hard to find.\"",
       "cpuLikes": 0,
-      "userResponse": "stopastopstop",
+      "userResponse": "Its 5oclock somewhere haha",
       "userLikes": 0,
-      "userName": "bobby",
-      "id": 31
-    },
-    {
-      "prompt": "What's the difference between a poorly dressed man on a unicycle and a well dressed man on a bicycle?",
-      "cpuResponse": "Attire.",
-      "cpuLikes": 0,
-      "userResponse": "no",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 32
-    },
-    {
-      "prompt": "Which part of the hospital has the least privacy?",
-      "cpuResponse": "The ICU.",
-      "cpuLikes": 0,
-      "userResponse": "ohohoh",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 33
-    },
-    {
-      "prompt": "How much did your chimney cost?",
-      "cpuResponse": "Nothing, it was on the house.",
-      "cpuLikes": 0,
-      "userResponse": "ohohoh",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 34
-    },
-    {
-      "prompt": "I can't believe I got fired from the calendar factory.",
-      "cpuResponse": "All I did was take a day off.",
-      "cpuLikes": 0,
-      "userResponse": "jghgh",
-      "userLikes": 0,
-      "userName": "vcg",
-      "id": 35
-    },
-    {
-      "prompt": "Why does the size of the snack not matter to a giraffe?",
-      "cpuResponse": "Because even a little bit goes a long way.",
-      "cpuLikes": 0,
-      "userResponse": "sdfsdfsdfsdf",
-      "userLikes": 0,
-      "userName": "dsfd",
-      "id": 36
-    },
-    {
-      "prompt": "What did the customer say to the waiter?",
-      "cpuResponse": "I'm all fed up with your service.",
-      "cpuLikes": 0,
-      "userResponse": "SHUTUP",
-      "userLikes": 0,
-      "userName": "SALLY",
-      "id": 37
-    },
-    {
-      "prompt": "What did the customer say to the waiter?",
-      "cpuResponse": "I'm all fed up with your service.",
-      "cpuLikes": 0,
-      "userResponse": "SHUTUP",
-      "userLikes": 0,
-      "userName": "SALLY",
-      "id": 38
-    },
-    {
-      "prompt": "What did the customer say to the waiter?",
-      "cpuResponse": "I'm all fed up with your service.",
-      "cpuLikes": 0,
-      "userResponse": "SHUTUP",
-      "userLikes": 0,
-      "userName": "SALLY",
-      "id": 39
-    },
-    {
-      "prompt": "What do you call 4 Mexicans in quicksand?",
-      "cpuResponse": "Quatro Sinko.",
-      "cpuLikes": 0,
-      "userResponse": "because 7 8 9",
-      "userLikes": 0,
-      "userName": "min",
-      "id": 40
-    },
-    {
-      "prompt": "What do you call 4 Mexicans in quicksand?",
-      "cpuResponse": "Quatro Sinko.",
-      "cpuLikes": 0,
-      "userResponse": "sus",
-      "userLikes": 0,
-      "userName": "min",
-      "id": 41
-    },
-    {
-      "prompt": "What time did the man go to the dentist?",
-      "cpuResponse": "Tooth hurt-y.",
-      "cpuLikes": 0,
-      "userResponse": "sdjfnsjdnksf",
-      "userLikes": 9,
-      "userName": "nsdfbjsdf",
-      "id": 42
-    },
-    {
-      "prompt": "I walked into a bar once.",
-      "cpuResponse": "It really hurt my head.",
-      "cpuLikes": 3,
-      "userResponse": "cool ",
-      "userLikes": 6,
-      "userName": "joe",
-      "id": 43
-    },
-    {
-      "prompt": "Did you hear about the crime in the parking garage?",
-      "cpuResponse": "It was wrong on so many levels.",
-      "cpuLikes": 0,
-      "userResponse": "ohohoh",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 44
-    },
-    {
-      "prompt": "Did you hear about the crime in the parking garage?",
-      "cpuResponse": "It was wrong on so many levels.",
-      "cpuLikes": 0,
-      "userResponse": "ohohoh",
-      "userLikes": 0,
-      "userName": "justin",
-      "id": 45
+      "userName": "Poppy",
+      "id": 16
     },
     {
       "prompt": "Why did the chicken cross the road, roll in the mud and cross the road again?",
       "cpuResponse": "He was a dirty double-crosser!",
       "cpuLikes": 0,
-      "userResponse": "chicken",
+      "userResponse": "mind your own business",
       "userLikes": 0,
-      "userName": "sarah",
-      "id": 46
+      "userName": "chicken",
+      "id": 17
     },
     {
-      "prompt": "Why did the chicken cross the road, roll in the mud and cross the road again?",
-      "cpuResponse": "He was a dirty double-crosser!",
+      "prompt": "The other day my wife asked me to pass her lipstick, but I accidentally gave her a glue stick.",
+      "cpuResponse": "She still isn't talking to me.",
       "cpuLikes": 0,
-      "userResponse": "chicken",
+      "userResponse": "jdflkasdjflad",
       "userLikes": 0,
-      "userName": "sarah",
-      "id": 47
-    },
-    {
-      "prompt": "Why did the chicken cross the road, roll in the mud and cross the road again?",
-      "cpuResponse": "He was a dirty double-crosser!",
-      "cpuLikes": 0,
-      "userResponse": "chickentoo",
-      "userLikes": 2,
-      "userName": "mark",
-      "id": 48
-    },
-    {
-      "prompt": "Where do sick cruise ships go to get healthy?",
-      "cpuResponse": "The dock!",
-      "cpuLikes": 2,
-      "userResponse": "the bodyguard",
-      "userLikes": 3,
-      "userName": "justin",
-      "id": 49
-    },
-    {
-      "prompt": "Do you know what killed the man who had a two ton pumpkin fall on him?",
-      "cpuResponse": "He was squashed.",
-      "cpuLikes": 0,
-      "userResponse": "yes man 1",
-      "userLikes": 0,
-      "userName": "jane",
-      "id": 50
-    },
-    {
-      "prompt": "Do you know what killed the man who had a two ton pumpkin fall on him?",
-      "cpuResponse": "He was squashed.",
-      "cpuLikes": 0,
-      "userResponse": "yes man 2",
-      "userLikes": 0,
-      "userName": "sarah",
-      "id": 51
+      "userName": "jake",
+      "id": 18
     }
   ]
 }
