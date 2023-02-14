@@ -3,7 +3,6 @@ let jokeDelivery = null
 
 jsonData=[]
 
-
 startJoke()
 
 function startJoke(){
@@ -33,8 +32,6 @@ userForm.addEventListener("submit", (e)=>addUserToJson(e))
 function addUserToJson(e){
     e.preventDefault()
 
-    
-
     userJoker = {
      prompt: jokePrompt,
      cpuResponse:jokeDelivery,
@@ -44,7 +41,7 @@ function addUserToJson(e){
      userName: e.target["user-name"].value
     }
 
-    jsonData.push(userJoker)
+    jsonData.push(userJoker) // ONLY PUSHES IN A SINGLE JOKE
 
     fetch('http://localhost:3000/users', {
       method: 'POST',
@@ -54,43 +51,49 @@ function addUserToJson(e){
       },
       body: JSON.stringify(userJoker)
     })
-
-    userForm.reset()
+    .then( () => {
+        renderJoke(userJoker) 
+        userForm.reset() 
+})
 }
 
 //CREATING THE JOKE LIST
-
 fetch("http://localhost:3000/users")
 .then(res => res.json())
 .then(data => {
-    data.forEach(jokeObj =>{
-        renderJokes(jokeObj);
+    renderAllJokes(data)
+    data.forEach(joke => {
+        jsonData.push(joke); //the entire db.json file now exists within jsonData
     })
+    
 })
 
-function renderJokes(jokeObj){
+function renderAllJokes(data){
+    let onlyTen = [...data].slice(-10)
+    onlyTen.forEach(jokeObj =>{
+        renderJoke(jokeObj);
+    })
+}
+
+function renderJoke(jokeObj){
+    
     const voteContainer = document.getElementById("voting-container");
-    // const aiContainer = document.getElementById("ai-punchline-container");
-    // const userContainer = document.getElementById("user-punchline-container");
+    const jokeContainer = document.createElement("div");
     const aiContainer = document.createElement("div");
     const userContainer = document.createElement("div");
-
-
     let prompt = document.createElement("h3");
-
     let aiTitle = document.createElement("h4");
     let aiPunchline = document.createElement("p");
     let aiNumOfLikes = document.createElement("p");
-
     let userTitle = document.createElement("h4");
     let userPunchline = document.createElement("p");
     let userNumofLikes = document.createElement("p");
     
-
-    voteContainer.append(prompt, aiContainer, userContainer);
+    voteContainer.appendChild(jokeContainer);
+    voteContainer.appendChild(jokeContainer);
+    jokeContainer.append(prompt, aiContainer, userContainer);
     aiContainer.append(aiTitle, aiPunchline, aiNumOfLikes);
     userContainer.append(userTitle, userPunchline, userNumofLikes);
-
 
     prompt.textContent = jokeObj.prompt;
     aiTitle.textContent = "The Daddy";
@@ -110,8 +113,13 @@ function renderJokes(jokeObj){
         userNumofLikes.textContent = jokeObj.userLikes;
         updateLikes(jokeObj);
     }) 
-}
 
+    jsonData.push(jokeObj);
+    
+    if(jsonData.length > 10){
+        voteContainer.children[0].remove();
+    }
+}
 //patch request for updating likes
 function updateLikes(jokeObj){
     fetch(`http://localhost:3000/users/${jokeObj.id}`,{
