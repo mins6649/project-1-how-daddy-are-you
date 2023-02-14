@@ -24,8 +24,35 @@
             "cpuResponse": "A fsh.",
             "cpuLikes": 15,
             "userResponse": "Blind.",
-            "userLikes": 0,
+            "userLikes": 1,
             "username": "Nick"
+        },
+        {
+            "id": 4,
+            "prompt": "What do you call a fish with no eyes?",
+            "cpuResponse": "A fsh.",
+            "cpuLikes": 16,
+            "userResponse": "Blind.",
+            "userLikes": 11,
+            "username": "Nick2"
+        },
+        {
+            "id": 5,
+            "prompt": "What do you call a fish with no eyes?",
+            "cpuResponse": "A fsh.",
+            "cpuLikes": 17,
+            "userResponse": "Blind.",
+            "userLikes": 3,
+            "username": "Nick3"
+        },
+        {
+            "id": 6,
+            "prompt": "What did the fish say when he swam into the wall?",
+            "cpuResponse": "Dam.",
+            "cpuLikes": 1,
+            "userResponse": "Beeeeeeaaaach.",
+            "userLikes": 11,
+            "username": "Min2"
         }
     ]
 }
