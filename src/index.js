@@ -186,6 +186,7 @@ fetch("http://localhost:3000/users")
 function renderAllJokes(data){
     let onlyTen = [...data].slice(-10);
     onlyTen.forEach(jokeObj => renderJoke(jokeObj));
+   
 }
 
 function renderJoke(jokeObj){
