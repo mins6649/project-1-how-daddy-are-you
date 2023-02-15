@@ -51,8 +51,9 @@ function addUserToJson(e){
       },
       body: JSON.stringify(userJoker)
     })
-    .then(() =>{
-        renderJoke(userJoker)
+    .then(res => res.json())
+    .then(data =>{
+        renderJoke(data)
         userForm.reset()
     })
 }
@@ -229,16 +230,23 @@ function renderJoke(jokeObj){
     userPunchline.textContent = jokeObj.userResponse;
     userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
 
-    aiContainer.addEventListener("click", () =>{
+    //Listener Functions
+    function updateAiLikes() {
         jokeObj.cpuLikes++;
         aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
         updateLikes(jokeObj);
-    })
-    userContainer.addEventListener("click", () =>{ 
+        aiContainer.removeEventListener('click', updateAiLikes)
+    }
+
+    function updateUserLikes() {
         jokeObj.userLikes++;
         userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
         updateLikes(jokeObj);
-    }) 
+        userContainer.removeEventListener('click', updateUserLikes)
+    }
+    //Event Listners to Update likes
+    aiContainer.addEventListener("click", updateAiLikes)
+    userContainer.addEventListener("click", updateUserLikes) 
 
     jsonData.push(jokeObj);
     

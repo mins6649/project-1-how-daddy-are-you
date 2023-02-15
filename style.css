@@ -66,6 +66,7 @@ th {
     font-family: 'Shrikhand', cursive;
     font-size: 18pt;
     color: #12355B;
+    background-color: #DC965A;
 }
 
 tr:hover{
@@ -198,7 +199,7 @@ input {
 .likes-container{
     font-family: 'Shrikhand', cursive;
     font-size: 20px;
-    margin-bottom: 0%;
+    margin-bottom: 10px;
     color: #7C6354;
     text-align: center;
 }

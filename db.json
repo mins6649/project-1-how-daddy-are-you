@@ -75,34 +75,34 @@
     {
       "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
       "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
-      "cpuLikes": 11,
+      "cpuLikes": 12,
       "userResponse": "Depends on the kind of milk...",
-      "userLikes": 18,
+      "userLikes": 21,
       "username": "Happy",
       "id": 9
     },
     {
       "prompt": "You see, mountains aren't just funny.",
       "cpuResponse": "They are hill areas.",
-      "cpuLikes": 13,
+      "cpuLikes": 12,
       "userResponse": "They are tall too.",
-      "userLikes": 5,
+      "userLikes": 9,
       "username": "Sad",
       "id": 10
     },
     {
       "prompt": "I was feeling depressed, my wife put her hand on my back and said \"Earth.\"",
       "cpuResponse": "It meant the world to me.",
-      "cpuLikes": 0,
+      "cpuLikes": 3,
       "userResponse": "ohahahahofheg",
-      "userLikes": 2,
+      "userLikes": 4,
       "username": "justin",
       "id": 11
     },
     {
       "prompt": "I walked into a bar once.",
       "cpuResponse": "It really hurt my head.",
-      "cpuLikes": 1,
+      "cpuLikes": 3,
       "userResponse": "LOVES TO CODE",
       "userLikes": 3,
       "username": "NICK",
@@ -113,25 +113,25 @@
       "cpuResponse": "There was nothing but de brie.",
       "cpuLikes": 1,
       "userResponse": "CHEESE EVERYWHERE",
-      "userLikes": 0,
+      "userLikes": 5,
       "username": "love",
       "id": 13
     },
     {
       "prompt": "The other day my wife asked me to pass her lipstick, but I accidentally gave her a glue stick.",
       "cpuResponse": "She still isn't talking to me.",
-      "cpuLikes": 0,
+      "cpuLikes": 1,
       "userResponse": "we are now divorced.",
-      "userLikes": 0,
+      "userLikes": 3,
       "username": "mike",
       "id": 14
     },
     {
       "prompt": "The past, the present and the future walk into a bar.",
       "cpuResponse": "It was tense.",
-      "cpuLikes": 0,
+      "cpuLikes": 1,
       "userResponse": "dont drink",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "ivy",
       "id": 15
     },
@@ -163,13 +163,49 @@
       "id": 18
     },
     {
-      "prompt": "Has COVID-19 forced you to wear glasses and a mask at the same time?",
-      "cpuResponse": "If so, you may be entitled to condensation.",
+      "prompt": "Which part of the hospital has the least privacy?",
+      "cpuResponse": "The ICU.",
       "cpuLikes": 0,
-      "userResponse": "Ya, who cares!",
-      "userLikes": 2,
-      "username": "Jack",
+      "userResponse": "The Bathroom",
+      "userLikes": 0,
+      "username": "Brad Pitt",
       "id": 19
+    },
+    {
+      "prompt": "What did the customer say to the waiter?",
+      "cpuResponse": "I'm all fed up with your service.",
+      "cpuLikes": 1,
+      "userResponse": "\"Eyyy Youre that guy that plays the man and woman!\"",
+      "userLikes": 3,
+      "username": "Adam Sandler",
+      "id": 20
+    },
+    {
+      "prompt": "So I made a graph of all my past relationships.",
+      "cpuResponse": "It has an ex axis and a why axis.",
+      "cpuLikes": 1,
+      "userResponse": "Why the hell would u do that",
+      "userLikes": 0,
+      "username": "Robert Pattinson",
+      "id": 21
+    },
+    {
+      "prompt": "I just saw my wife trip over and drop a basket full of ironed clothes.",
+      "cpuResponse": "I watched it all unfold.",
+      "cpuLikes": 0,
+      "userResponse": "Baller",
+      "userLikes": 0,
+      "username": "Kobe",
+      "id": 22
+    },
+    {
+      "prompt": "How much did your chimney cost?",
+      "cpuResponse": "Nothing, it was on the house.",
+      "cpuLikes": 1,
+      "userResponse": "Yeah, how much did it cost?",
+      "userLikes": 1,
+      "username": "Santa Clause",
+      "id": 23
     }
   ]
 }
