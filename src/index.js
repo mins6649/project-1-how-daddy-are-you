@@ -53,21 +53,19 @@ function addUserToJson(e){
     })
     .then(res => res.json())
     .then(data =>{
-        renderJoke(data)
-        userForm.reset()
+        let element = createElement(data);
+        voteContainer.prepend(element);
+
+        voteContainer.children[10].remove();
     })
+    userForm.reset()
 }
-
-
-
 
 let scoreJsonData = [];
 
 //Render Scoreboard Fuunctions
 function sortMatches() {
     //grab elements
-    console.log(scoreJsonData)
-
 
     let winnerArray = [];
     let loserArray = [];
@@ -104,7 +102,6 @@ function sortMatches() {
         "https://cdn.spotlightstories.co/wp-content/uploads/2019/08/08002854/vincevaughn.jpg"
     ];
 
-    console.log(completeArray)
     appendScoreboard(winnerArray, document.getElementById('high-scores'), winnerImageArray);
     appendScoreboard(loserArray, document.getElementById('low-scores'), loserImageArray);
     appendScoreboard(completeArray, document.getElementById('recent-scores'));
@@ -118,7 +115,6 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
         styleDiv.appendChild(newRow)
 
         styleDiv.setAttribute('class', 'rowHighlighter')
-        console.log(styleDiv)
 
         //left td
         const imgHolder = document.createElement('td')
@@ -183,23 +179,23 @@ fetch("http://localhost:3000/users")
     })
 })
 
+const voteContainer = document.getElementById("voting-container");
+
 function renderAllJokes(data){
-    let onlyTen = [...data].slice(-10);
+    let onlyTen = [...data].slice(-10).reverse();
     onlyTen.forEach(jokeObj => renderJoke(jokeObj));
 }
 
 function renderJoke(jokeObj){
-    const voteContainer = document.getElementById("voting-container");
+    let element = createElement(jokeObj)
+    voteContainer.appendChild(element);  
+}
+
+function createElement(jokeObj){
     const aiContainer = document.createElement("div");
     const userContainer = document.createElement("div");    
     const jokeContainer = document.createElement("div");  
     const responseContainer = document.createElement("div");
-  
-    aiContainer.id = "ai-joke-container";
-    userContainer.id = "user-joke-container";
-    jokeContainer.id = "one-joke";
-    responseContainer.id ="punchlines";
-
     let prompt = document.createElement("h3");
     let aiTitle = document.createElement("h4");
     let aiPunchline = document.createElement("p");
@@ -207,20 +203,21 @@ function renderJoke(jokeObj){
     let userTitle = document.createElement("h4");
     let userPunchline = document.createElement("p");
     let userNumofLikes = document.createElement("p");
-
+  
+    //CSS
+    aiContainer.id = "ai-joke-container";
+    userContainer.id = "user-joke-container";
+    jokeContainer.id = "one-joke";
+    responseContainer.id ="punchlines";
     aiTitle.className = "name-title";
     userTitle.className = "name-title";
     aiNumOfLikes.className = "likes-container";
     userNumofLikes.className = "likes-container";
 
-
-    
-    voteContainer.appendChild(jokeContainer);
     jokeContainer.append(prompt, responseContainer);
     responseContainer.append(aiContainer, userContainer);
     aiContainer.append(aiTitle, aiPunchline, aiNumOfLikes);
     userContainer.append(userTitle, userPunchline, userNumofLikes);
-    selectedJoke = jokeContainer
 
     prompt.textContent = jokeObj.prompt;
     aiTitle.textContent = "The Daddy";
@@ -230,30 +227,29 @@ function renderJoke(jokeObj){
     userPunchline.textContent = jokeObj.userResponse;
     userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
 
-    //Listener Functions
-    function updateAiLikes() {
-        jokeObj.cpuLikes++;
-        aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
-        updateLikes(jokeObj);
-        aiContainer.removeEventListener('click', updateAiLikes)
-    }
-
-    function updateUserLikes() {
-        jokeObj.userLikes++;
-        userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
-        updateLikes(jokeObj);
-        userContainer.removeEventListener('click', updateUserLikes)
-    }
-    //Event Listners to Update likes
+        //Listener Functions
+        function updateAiLikes() {
+            jokeObj.cpuLikes++;
+            aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
+            updateLikes(jokeObj);
+            aiContainer.removeEventListener('click', updateAiLikes)
+        }
+    
+        function updateUserLikes() {
+            jokeObj.userLikes++;
+            userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
+            updateLikes(jokeObj);
+            userContainer.removeEventListener('click', updateUserLikes)
+        }
+    
+         //Event Listners to Update likes
     aiContainer.addEventListener("click", updateAiLikes)
     userContainer.addEventListener("click", updateUserLikes) 
 
     jsonData.push(jokeObj);
-    
-    if(jsonData.length > 10){
-        voteContainer.children[0].remove();
-    }
+    return jokeContainer;
 }
+
 //patch request for updating likes
 function updateLikes(jokeObj){
     fetch(`http://localhost:3000/users/${jokeObj.id}`,{
