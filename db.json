@@ -75,9 +75,9 @@
     {
       "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
       "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
-      "cpuLikes": 7,
+      "cpuLikes": 10,
       "userResponse": "Depends on the kind of milk...",
-      "userLikes": 9,
+      "userLikes": 17,
       "username": "Happy",
       "id": 9
     },
