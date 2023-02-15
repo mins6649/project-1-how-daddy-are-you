@@ -148,8 +148,6 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
             let daddySaysLine3 = document.querySelector("#line3")
 
             daddySaysLine1.style.visibility = 'visible'
-            daddySaysLine2.style.visibility = 'visible'
-            daddySaysLine3.style.visibility = 'visible'
             daddySaysPrompt.textContent = `${scoreArray[i].prompt}`
             daddySaysUsername.textContent = `${scoreArray[i].username}`
             daddySaysUserResponse.textContent = `${scoreArray[i].userResponse}`
@@ -157,8 +155,6 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
             
             newRow.onmouseout = function (){
             daddySaysLine1.style.visibility = 'hidden'
-            daddySaysLine2.style.visibility = 'hidden'
-            daddySaysLine3.style.visibility = 'hidden'
             daddySaysPrompt.textContent = ``
             daddySaysUsername.textContent = ``
             daddySaysUserResponse.textContent = ``

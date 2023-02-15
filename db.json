@@ -75,18 +75,18 @@
     {
       "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
       "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
-      "cpuLikes": 10,
+      "cpuLikes": 11,
       "userResponse": "Depends on the kind of milk...",
-      "userLikes": 17,
+      "userLikes": 18,
       "username": "Happy",
       "id": 9
     },
     {
       "prompt": "You see, mountains aren't just funny.",
       "cpuResponse": "They are hill areas.",
-      "cpuLikes": 11,
+      "cpuLikes": 13,
       "userResponse": "They are tall too.",
-      "userLikes": 4,
+      "userLikes": 5,
       "username": "Sad",
       "id": 10
     },
@@ -102,9 +102,9 @@
     {
       "prompt": "I walked into a bar once.",
       "cpuResponse": "It really hurt my head.",
-      "cpuLikes": 0,
+      "cpuLikes": 1,
       "userResponse": "LOVES TO CODE",
-      "userLikes": 0,
+      "userLikes": 3,
       "username": "NICK",
       "id": 12
     },
@@ -161,6 +161,15 @@
       "userLikes": 0,
       "username": "jake",
       "id": 18
+    },
+    {
+      "prompt": "Has COVID-19 forced you to wear glasses and a mask at the same time?",
+      "cpuResponse": "If so, you may be entitled to condensation.",
+      "cpuLikes": 0,
+      "userResponse": "Ya, who cares!",
+      "userLikes": 2,
+      "username": "Jack",
+      "id": 19
     }
   ]
 }
