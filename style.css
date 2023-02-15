@@ -41,19 +41,22 @@ body {
 
 th {
     font-size: 16pt;
+    background-color: #DC965A;
 }
 
 tr:hover{
-    background-color: #12355B;
+    background-color: #F7F5FB;
 }
 
 td {
+    height: 75px;
     text-align: left;
-    border: 1px;
+    border-color: #F7F5FB;
 }
 
 img {
     width: 75px;
+    height: 75px;
 }
 
 #daddy-says-container {
@@ -67,6 +70,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
+    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
 }
 
 h4 {
@@ -111,4 +115,16 @@ input {
     border-radius: 40px;
     width:  150px;
     height: 40px;
+    cursor: pointer;
+}
+#daddy {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 0px;
+}
+
+#setup {
+    max-width: 200px;
+    margin: 0 auto;
 }

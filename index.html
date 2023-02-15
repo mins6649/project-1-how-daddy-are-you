@@ -7,6 +7,9 @@
         <script defer src="./src/index.js"></script>
     </head>
     <body>
+        <div>
+            <img id="daddy" src="./src/PhotoRoom_20230214_173502.png" alt="A Daddy">
+        </div>
         <header>
             <h1 class="main-section">How Daddy Are You?</h1>
         </header>
@@ -17,7 +20,8 @@
             <!--PROMPT: We render the setup and user can input punchline-->
             <section class="create-joke main-section">
                 <h2>Can you beat our Daddy?</h2>
-                <h3 id = "setup"> <!--PROMPT--> </h3>
+                    <h3 id = "setup"> <!--PROMPT--> </h3>
+                    <br>
                 <!--FORM: for inputing punchline-->
                 <form id="user-punchline-form">
                     <input id="user-name" type="text" placeholder="  Name"/>
@@ -45,6 +49,7 @@
             
             <section class="side-bar-container">
                 <div id="daddy-says-container">
+                    
                     <h4>Daddy says:</h4>
                     <p id="daddy-says-p"></p>
                 </div>

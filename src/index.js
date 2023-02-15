@@ -112,8 +112,12 @@ function sortMatches() {
 function appendScoreboard(scoreArray, element, imageArray = []) {
     //the over-arching loop to create three rows 
     for (let i = 0; i < 3; i++) {
+        const styleDiv = document.createElement('div')
         const newRow = document.createElement('tr')
-        console.log("pass thru append scoreboard")
+        styleDiv.appendChild(newRow)
+
+        styleDiv.setAttribute('class', 'rowHighlighter')
+        console.log(styleDiv)
 
         //left td
         const imgHolder = document.createElement('td')
