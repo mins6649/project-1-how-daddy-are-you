@@ -138,6 +138,25 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
         //append all
         newRow.append(imgHolder, userName, score)
         element.appendChild(newRow)
+        newRow.onmouseover = function () {
+            let daddySaysPrompt = document.querySelector("#daddy-says-prompt")
+            let daddySaysUsername = document.querySelector("#daddy-says-username")
+            let daddySaysUserResponse = document.querySelector("#daddy-says-user-response")
+            let daddySaysLikes = document.querySelector("#daddy-says-likes")
+            daddySaysPrompt.textContent = `${scoreArray[i].prompt}`
+            daddySaysUsername.textContent = `${scoreArray[i].username}`
+            daddySaysUserResponse.textContent = `${scoreArray[i].userResponse}`
+            daddySaysLikes.textContent = `${scoreArray[i].userLikes}`
+            
+            newRow.onmouseout = function (){
+            daddySaysPrompt.textContent = ``
+            daddySaysUsername.textContent = ``
+            daddySaysUserResponse.textContent = ``
+            daddySaysLikes.textContent = ``
+            }
+        }
+        
+
     }
 }
 
@@ -165,8 +184,14 @@ function renderAllJokes(data){
 function renderJoke(jokeObj){
     const voteContainer = document.getElementById("voting-container");
     const aiContainer = document.createElement("div");
-    const userContainer = document.createElement("div");
-    const jokeContainer = document.createElement("div");
+    const userContainer = document.createElement("div");    
+    const jokeContainer = document.createElement("div");  
+    const responseContainer = document.createElement("div");
+  
+    aiContainer.id = "ai-joke-container";
+    userContainer.id = "user-joke-container";
+    jokeContainer.id = "one-joke";
+    responseContainer.id ="punchlines";
 
     let prompt = document.createElement("h3");
     let aiTitle = document.createElement("h4");
@@ -175,28 +200,37 @@ function renderJoke(jokeObj){
     let userTitle = document.createElement("h4");
     let userPunchline = document.createElement("p");
     let userNumofLikes = document.createElement("p");
+
+    aiTitle.className = "name-title";
+    userTitle.className = "name-title";
+    aiNumOfLikes.className = "likes-container";
+    userNumofLikes.className = "likes-container";
+
+
     
     voteContainer.appendChild(jokeContainer);
-    jokeContainer.append(prompt, aiContainer, userContainer);
+    jokeContainer.append(prompt, responseContainer);
+    responseContainer.append(aiContainer, userContainer);
     aiContainer.append(aiTitle, aiPunchline, aiNumOfLikes);
     userContainer.append(userTitle, userPunchline, userNumofLikes);
+    selectedJoke = jokeContainer
 
     prompt.textContent = jokeObj.prompt;
     aiTitle.textContent = "The Daddy";
     aiPunchline.textContent = jokeObj.cpuResponse;
-    aiNumOfLikes.textContent = jokeObj.cpuLikes;
+    aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
     userTitle.textContent = "User";
     userPunchline.textContent = jokeObj.userResponse;
-    userNumofLikes.textContent = jokeObj.userLikes;
+    userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
 
     aiContainer.addEventListener("click", () =>{
         jokeObj.cpuLikes++;
-        aiNumOfLikes.textContent = jokeObj.cpuLikes;
+        aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
         updateLikes(jokeObj);
     })
     userContainer.addEventListener("click", () =>{ 
         jokeObj.userLikes++;
-        userNumofLikes.textContent = jokeObj.userLikes;
+        userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
         updateLikes(jokeObj);
     }) 
 

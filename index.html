@@ -3,6 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <script defer src="./src/index.js"></script>
     </head>
@@ -37,6 +40,7 @@
             <!--Where we render the jokes submitted-->
             <section class="jokes main-section">
                 <hr id="divider">
+                <p id="voting-instructions">Click to give best Dad Joke!</p>
                 <div id="voting-container">
                     <!-- Prompt, Ai Res, User Res -->
                 </div>
@@ -49,8 +53,14 @@
             
             <section class="side-bar-container">
                 <div id="daddy-says-container">
-                    
-                    <h4>Daddy says:</h4>
+                    <h3>*Dad's Are Always Proud!*</h3>
+                    <h4 id= "daddy-says-prompt"> </h4>
+                    <hr> 
+                    <h4 id= "daddy-says-username"></h4>
+                    <hr> 
+                    <h4 id="daddy-says-user-response"></h4>
+                    <hr> <h4 id= "daddy-says-likes"></h4>
+
                     <p id="daddy-says-p"></p>
                 </div>
             </section>
