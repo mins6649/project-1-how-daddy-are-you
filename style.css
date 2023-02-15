@@ -180,3 +180,42 @@ input {
     color: #5B9279;
     text-align: center;
 }
+
+/* Daddy Says Bar */
+#Daddy-Says{
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+    color: #5B9279;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+#daddy-says-user-response{
+    font-size: 20px;
+    text-align: center;
+    margin: 0%;
+}
+#daddy-says-prompt{
+    text-align: center;
+    font-size: 20px;
+    margin: 0%;
+}
+#daddy-says-username{
+    font-family: 'Shrikhand', cursive;
+    color: #12355B;
+    font-size: 20px;
+    margin: 0%;
+    text-align: center;
+}
+
+#daddy-says-likes{
+    font-family: 'Shrikhand', cursive;
+    color: #7C6354;
+    font-size: 20px;
+    margin: 0%;
+    text-align: center;
+}
+#daddy-says-container{
+    position: fixed;
+    text-align: center;
+}
