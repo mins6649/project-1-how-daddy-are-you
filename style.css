@@ -144,6 +144,7 @@ input {
     background-color: #5B9279;
     padding: 10px;
     margin: 20px;
+    border-radius: 20px;
 }
 
 #punchlines{
@@ -177,6 +178,6 @@ input {
     font-family: 'Shrikhand', cursive;
     font-size: 20px;
     margin-bottom: 0%;
-    color: #5B9279;
+    color: #7C6354;
     text-align: center;
 }
