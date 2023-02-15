@@ -194,19 +194,19 @@ function renderJoke(jokeObj){
     prompt.textContent = jokeObj.prompt;
     aiTitle.textContent = "The Daddy";
     aiPunchline.textContent = jokeObj.cpuResponse;
-    aiNumOfLikes.textContent = jokeObj.cpuLikes;
+    aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
     userTitle.textContent = "User";
     userPunchline.textContent = jokeObj.userResponse;
-    userNumofLikes.textContent = jokeObj.userLikes;
+    userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
 
     aiContainer.addEventListener("click", () =>{
         jokeObj.cpuLikes++;
-        aiNumOfLikes.textContent = jokeObj.cpuLikes;
+        aiNumOfLikes.textContent = `${jokeObj.cpuLikes} Beers!`;
         updateLikes(jokeObj);
     })
     userContainer.addEventListener("click", () =>{ 
         jokeObj.userLikes++;
-        userNumofLikes.textContent = jokeObj.userLikes;
+        userNumofLikes.textContent = `${jokeObj.userLikes} Beers!`;
         updateLikes(jokeObj);
     }) 
 

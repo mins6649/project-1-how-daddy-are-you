@@ -75,18 +75,18 @@
     {
       "prompt": "A grocery store cashier asked if I would like my milk in a bag.",
       "cpuResponse": "I told her \"No, thanks. The carton works fine\".",
-      "cpuLikes": 7,
+      "cpuLikes": 9,
       "userResponse": "Depends on the kind of milk...",
-      "userLikes": 13,
+      "userLikes": 16,
       "username": "Happy",
       "id": 9
     },
     {
       "prompt": "You see, mountains aren't just funny.",
       "cpuResponse": "They are hill areas.",
-      "cpuLikes": 8,
+      "cpuLikes": 11,
       "userResponse": "They are tall too.",
-      "userLikes": 1,
+      "userLikes": 4,
       "username": "Sad",
       "id": 10
     },
@@ -111,7 +111,7 @@
     {
       "prompt": "Did you hear about the cheese factory that exploded in France?",
       "cpuResponse": "There was nothing but de brie.",
-      "cpuLikes": 0,
+      "cpuLikes": 1,
       "userResponse": "CHEESE EVERYWHERE",
       "userLikes": 0,
       "username": "love",
