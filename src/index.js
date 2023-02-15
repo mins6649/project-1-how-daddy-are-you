@@ -51,8 +51,9 @@ function addUserToJson(e){
       },
       body: JSON.stringify(userJoker)
     })
-    .then(() =>{
-        renderJoke(userJoker)
+    .then(res => res.json())
+    .then(data =>{
+        renderJoke(data)
         userForm.reset()
     })
 }
