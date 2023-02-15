@@ -134,6 +134,25 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
         //append all
         newRow.append(imgHolder, userName, score)
         element.appendChild(newRow)
+        newRow.onmouseover = function () {
+            let daddySaysPrompt = document.querySelector("#daddy-says-prompt")
+            let daddySaysUsername = document.querySelector("#daddy-says-username")
+            let daddySaysUserResponse = document.querySelector("#daddy-says-user-response")
+            let daddySaysLikes = document.querySelector("#daddy-says-likes")
+            daddySaysPrompt.textContent = `${scoreArray[i].prompt}`
+            daddySaysUsername.textContent = `${scoreArray[i].username}`
+            daddySaysUserResponse.textContent = `${scoreArray[i].userResponse}`
+            daddySaysLikes.textContent = `${scoreArray[i].userLikes}`
+            
+            newRow.onmouseout = function (){
+            daddySaysPrompt.textContent = ``
+            daddySaysUsername.textContent = ``
+            daddySaysUserResponse.textContent = ``
+            daddySaysLikes.textContent = ``
+            }
+        }
+        
+
     }
 }
 
@@ -176,6 +195,7 @@ function renderJoke(jokeObj){
     jokeContainer.append(prompt, aiContainer, userContainer);
     aiContainer.append(aiTitle, aiPunchline, aiNumOfLikes);
     userContainer.append(userTitle, userPunchline, userNumofLikes);
+    selectedJoke = jokeContainer
 
     prompt.textContent = jokeObj.prompt;
     aiTitle.textContent = "The Daddy";
@@ -184,6 +204,7 @@ function renderJoke(jokeObj){
     userTitle.textContent = "User";
     userPunchline.textContent = jokeObj.userResponse;
     userNumofLikes.textContent = jokeObj.userLikes;
+    
 
     aiContainer.addEventListener("click", () =>{
         jokeObj.cpuLikes++;
