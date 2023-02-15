@@ -4,11 +4,29 @@ Viridian: 5B9279
 Ghost White: F7F5FB
 COYOTE: 7C6354
 BERKELY BLUE: 12355B */
-
+*{
+    font-family: 'Fira Sans', sans-serif;}
 body {
 
-    font-family: Lato, sans-serif;
+    /* font-family: Lato, sans-serif; */
     background-color: #DC965A;
+}
+h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 60px;
+    color: #12355B;
+    margin-bottom: 0%;
+}
+h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    color: #F7F5FB;
+    margin-top: 0%;
+    margin-bottom: 50px;
+}
+
+#setup{
+    font-size: 30px;
 }
 
 .scoreboard-container {
@@ -40,7 +58,9 @@ body {
 }
 
 th {
-    font-size: 16pt;
+    font-family: 'Shrikhand', cursive;
+    font-size: 18pt;
+    color: #12355B;
 }
 
 tr:hover{
@@ -111,4 +131,52 @@ input {
     border-radius: 40px;
     width:  150px;
     height: 40px;
+}
+
+/* RENDERED JOKE SECTION: */
+#voting-instructions{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    color: #F7F5FB;
+}
+
+#one-joke{
+    background-color: #5B9279;
+    padding: 10px;
+    margin: 20px;
+}
+
+#punchlines{
+    display: flex;
+    flex-direction: row;
+}
+
+#ai-joke-container{
+    background-color: #F7F5FB;
+    width: 50%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#user-joke-container{
+    background-color: #F7F5FB;
+    width: 50%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.name-title{
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    margin-bottom: 0%;
+    color: #12355B;
+    text-align: center;
+}
+
+.likes-container{
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+    margin-bottom: 0%;
+    color: #5B9279;
+    text-align: center;
 }

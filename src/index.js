@@ -161,8 +161,14 @@ function renderAllJokes(data){
 function renderJoke(jokeObj){
     const voteContainer = document.getElementById("voting-container");
     const aiContainer = document.createElement("div");
-    const userContainer = document.createElement("div");
-    const jokeContainer = document.createElement("div");
+    const userContainer = document.createElement("div");    
+    const jokeContainer = document.createElement("div");  
+    const responseContainer = document.createElement("div");
+  
+    aiContainer.id = "ai-joke-container";
+    userContainer.id = "user-joke-container";
+    jokeContainer.id = "one-joke";
+    responseContainer.id ="punchlines";
 
     let prompt = document.createElement("h3");
     let aiTitle = document.createElement("h4");
@@ -171,9 +177,17 @@ function renderJoke(jokeObj){
     let userTitle = document.createElement("h4");
     let userPunchline = document.createElement("p");
     let userNumofLikes = document.createElement("p");
+
+    aiTitle.className = "name-title";
+    userTitle.className = "name-title";
+    aiNumOfLikes.className = "likes-container";
+    userNumofLikes.className = "likes-container";
+
+
     
     voteContainer.appendChild(jokeContainer);
-    jokeContainer.append(prompt, aiContainer, userContainer);
+    jokeContainer.append(prompt, responseContainer);
+    responseContainer.append(aiContainer, userContainer);
     aiContainer.append(aiTitle, aiPunchline, aiNumOfLikes);
     userContainer.append(userTitle, userPunchline, userNumofLikes);
 
