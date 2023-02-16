@@ -78,14 +78,12 @@ tr:hover{
 }
 
 td {
-    height: 75px;
     text-align: left;
     border-color: #F7F5FB;
 }
 
 img {
-    width: 75px;
-    height: 75px;
+    display: block;
 }
 
 #daddy-says-container {
