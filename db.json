@@ -120,18 +120,18 @@
     {
       "prompt": "The other day my wife asked me to pass her lipstick, but I accidentally gave her a glue stick.",
       "cpuResponse": "She still isn't talking to me.",
-      "cpuLikes": 1,
+      "cpuLikes": 3,
       "userResponse": "we are now divorced.",
-      "userLikes": 3,
+      "userLikes": 5,
       "username": "mike",
       "id": 14
     },
     {
       "prompt": "The past, the present and the future walk into a bar.",
       "cpuResponse": "It was tense.",
-      "cpuLikes": 1,
+      "cpuLikes": 2,
       "userResponse": "dont drink",
-      "userLikes": 1,
+      "userLikes": 2,
       "username": "ivy",
       "id": 15
     },
@@ -185,7 +185,7 @@
       "cpuResponse": "It has an ex axis and a why axis.",
       "cpuLikes": 1,
       "userResponse": "Why the hell would u do that",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "Robert Pattinson",
       "id": 21
     },
@@ -194,7 +194,7 @@
       "cpuResponse": "I watched it all unfold.",
       "cpuLikes": 0,
       "userResponse": "Baller",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "Kobe",
       "id": 22
     },
@@ -206,60 +206,6 @@
       "userLikes": 1,
       "username": "Santa Clause",
       "id": 23
-    },
-    {
-      "prompt": "Did you hear about the claustrophobic astronaut?",
-      "cpuResponse": "He just needed a little space.",
-      "cpuLikes": 0,
-      "userResponse": "He didnt like space",
-      "userLikes": 0,
-      "username": "Eshwar",
-      "id": 24
-    },
-    {
-      "prompt": "I was feeling depressed, my wife put her hand on my back and said \"Earth.\"",
-      "cpuResponse": "It meant the world to me.",
-      "cpuLikes": 0,
-      "userResponse": "haha",
-      "userLikes": 0,
-      "username": "nick",
-      "id": 25
-    },
-    {
-      "prompt": "I was feeling depressed, my wife put her hand on my back and said \"Earth.\"",
-      "cpuResponse": "It meant the world to me.",
-      "cpuLikes": 0,
-      "userResponse": "some description",
-      "userLikes": 0,
-      "username": "Eshwar",
-      "id": 26
-    },
-    {
-      "prompt": "Why did the banana go see a doctor?",
-      "cpuResponse": "Because it wasn't peeling well.",
-      "cpuLikes": 0,
-      "userResponse": "bsbsbsbs",
-      "userLikes": 0,
-      "username": "bdbgsbs",
-      "id": 27
-    },
-    {
-      "prompt": "I walked into a bar once.",
-      "cpuResponse": "It really hurt my head.",
-      "cpuLikes": 0,
-      "userResponse": "bobyyyyyyyy",
-      "userLikes": 0,
-      "username": "Bobbyyyy",
-      "id": 28
-    },
-    {
-      "prompt": "What kind of doctor is Dr. Pepper?",
-      "cpuResponse": "He's a fizzician.",
-      "cpuLikes": 0,
-      "userResponse": "top of list",
-      "userLikes": 0,
-      "username": "sarah",
-      "id": 29
     }
   ]
 }
