@@ -33,8 +33,20 @@
                     <br><br>
                     <input type="submit" class="buttons"/>
                 </form>
-                <br><br>
-                <form id ="newJoke"><input class="buttons" type = "submit" value="New Joke"></form>
+                <form id="catagory-selector" name="cat">
+                    <br>
+                    <input class="cat-buttons" id="cat1" name="cat" type="radio" value="Programming">
+                    <label class="cat-buttons-label" for="cat1">Programming</label>
+                    <input class="cat-buttons" id="cat2" name="cat" type="radio" value="Spooky"> 
+                    <label class="cat-buttons-label" for="cat2">Spooky</label>
+                    <input class="cat-buttons" id="cat3" name="cat" type="radio" value="Pun"> 
+                    <label class="cat-buttons-label" for="cat3">Pun</label>
+                    <input class="cat-buttons" id="cat4" name="cat" type="radio" value="Christmas">
+                    <label class="cat-buttons-label" for="cat4">Christmas</label>
+                    <input class="cat-buttons" id="cat5" name="cat" type="radio" value="Misc"> 
+                    <label class="cat-buttons-label" for="cat5">Misc</label>
+                    <input class="buttons" type="submit" value="New Joke">
+                </form>
             </section>
             
             <!--Where we render the jokes submitted-->
