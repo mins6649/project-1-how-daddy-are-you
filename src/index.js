@@ -290,6 +290,7 @@ recentScoresTitle.addEventListener("click", oliveGarden);
 daddyTitle.addEventListener("click", ryanReynolds);
 
 function oliveGarden(){
+    oliveGardenEasterEgg.innerText = "";
     let picture = document.createElement("img")
     let link = document.createElement("a")
     link.href = "https://www.olivegarden.com/home"
@@ -306,6 +307,7 @@ function oliveGarden(){
 }
 
 function ryanReynolds(){
+    ryanReynoldsEasterEgg.innerText = "";
     let picture = document.createElement("img");
     let link = document.createElement("a");
 
@@ -320,7 +322,11 @@ function ryanReynolds(){
     daddySays.appendChild(ryanReynoldsEasterEgg);
 }
 
-
-
+daddyTitle.addEventListener("mouseover", () =>{
+    oliveGardenEasterEgg.innerText = "";
+})
+recentScoresTitle.addEventListener("mouseover", () =>{
+    ryanReynoldsEasterEgg.innerText = "";
+})
 
 
