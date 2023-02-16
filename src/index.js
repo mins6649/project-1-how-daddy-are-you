@@ -158,6 +158,7 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
             daddySaysLikes.textContent = ``
             }
             oliveGardenEasterEgg.innerText = "";
+            ryanReynoldsEasterEgg.innerText = "";
                   
         }
     }
@@ -266,21 +267,43 @@ function updateLikes(jokeObj){
 const daddySays = document.getElementById("daddy-says-container");
 const recentScoresTitle = document.getElementById("recent-scores-title");
 const oliveGardenEasterEgg = document.createElement("div");
+const daddyTitle = document.getElementById("ryanReynolds");
+const ryanReynoldsEasterEgg = document.createElement("div");
 
 recentScoresTitle.addEventListener("click", oliveGarden);
+daddyTitle.addEventListener("click", ryanReynolds);
 
-function oliveGarden(e){
-    //e.stopPropagation();
+function oliveGarden(){
     let picture = document.createElement("img")
     let link = document.createElement("a")
     link.href = "https://www.olivegarden.com/home"
     link.textContent = "Your answer was too boring. This is where you belong:"
     picture.src ="https://www.kark.com/wp-content/uploads/sites/85/2021/12/OliveGardenGettyImages-1326009258.jpg?w=1280&h=720&crop=1";
+    
     link.id = "oliveGardenLink";
     picture.id = "oliveGarden";
-    oliveGardenEasterEgg.append(link, picture);
+    
+    link.appendChild(picture)
+    oliveGardenEasterEgg.appendChild(link);
     daddySays.append(oliveGardenEasterEgg);  
+    //needs to only click once
 }
+
+function ryanReynolds(){
+    let picture = document.createElement("img");
+    let link = document.createElement("a");
+
+    link.href = "https://ryan-reynolds.net/"
+    link.textContent = "Daddy"
+    picture.src = "https://ntvb.tmsimg.com/assets/assets/57282_v9_bc.jpg?w=270&h=360";
+  
+    link.id = "ryanReynoldsLink";
+    picture.id = "ryanReynoldsPic";
+    
+    ryanReynoldsEasterEgg.append(picture, link);
+    daddySays.appendChild(ryanReynoldsEasterEgg);
+}
+
 
 
 
