@@ -5,13 +5,20 @@ Ghost White: F7F5FB
 COYOTE: 7C6354
 BERKELY BLUE: 12355B */
 *{
-    font-family: 'Fira Sans', sans-serif;}
+    font-family: 'Fira Sans', sans-serif;
+}
 body {
 
     /* font-family: Lato, sans-serif; */
     background-color: #DC965A;
 }
 h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 60px;
+    color: #12355B;
+    margin-bottom: 0%;
+}
+#ryanReynolds{
     font-family: 'Shrikhand', cursive;
     font-size: 60px;
     color: #12355B;
@@ -296,4 +303,35 @@ input {
 
 #recent-scores-title {
     cursor: url('src/Breadstick.png'), auto;
+}
+
+/* EASTER EGG */
+#oliveGardenLink{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+#oliveGarden{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 130px;
+}
+#ryanReynoldsLink{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: #12355B;
+    text-align: center;
+}
+#ryanReynoldsPic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 130px;
+    height: 150px;
 }
