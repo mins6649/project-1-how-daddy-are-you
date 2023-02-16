@@ -69,6 +69,10 @@ th {
     background-color: #DC965A;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 tr:hover{
     background-color: #F7F5FB;
 }
@@ -288,4 +292,8 @@ input {
     font-size: 20px;
     margin: 0%;
     text-align: center;
+}
+
+#recent-scores-title {
+    cursor: url('src/Breadstick.png'), auto;
 }
