@@ -181,7 +181,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    cursor: url('static/PhotoRoom_20230214_180624.png'), auto;
 }
 
 #user-joke-container{
@@ -189,7 +189,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    cursor: url('static/PhotoRoom_20230214_180624.png'), auto;
 }
 
 .name-title{
@@ -295,5 +295,5 @@ input {
 }
 
 #recent-scores-title {
-    cursor: url('src/Breadstick.png'), auto;
+    cursor: url('static/Breadstick.png'), auto;
 }
