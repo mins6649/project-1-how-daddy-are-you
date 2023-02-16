@@ -78,14 +78,12 @@ tr:hover{
 }
 
 td {
-    height: 75px;
     text-align: left;
     border-color: #F7F5FB;
 }
 
 img {
-    width: 75px;
-    height: 75px;
+    display: block;
 }
 
 #daddy-says-container {
@@ -181,7 +179,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    cursor: url('static/PhotoRoom_20230214_180624.png'), auto;
 }
 
 #user-joke-container{
@@ -189,7 +187,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    cursor: url('static/PhotoRoom_20230214_180624.png'), auto;
 }
 
 .name-title{
@@ -295,5 +293,5 @@ input {
 }
 
 #recent-scores-title {
-    cursor: url('src/Breadstick.png'), auto;
+    cursor: url('static/Breadstick.png'), auto;
 }
