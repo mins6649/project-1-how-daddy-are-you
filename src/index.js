@@ -5,13 +5,18 @@ jsonData=[]
 
 startJoke()
 
-function startJoke(){
-fetch ("https://v2.jokeapi.dev/joke/pun?format=json&safe-mode&type=twopart")
+function startJoke(cat="Misc"){
+    console.log(cat)
+fetch (`https://v2.jokeapi.dev/joke/${cat}?format=json&safe-mode&type=twopart`)
 .then ((res)=> res.json())
-.then ((joke) => 
-    renderSetup(joke))
+.then ((joke) => {
+    console.log(joke)
+    renderSetup(joke)
+})
 }
 
+
+const catagorySelector = document.querySelector("#catagory-selector")
 const jokeSetup = document.querySelector("#setup")
 const newJoke = document.querySelector("#newJoke")
 const userForm = document.querySelector("#user-punchline-form")
@@ -22,10 +27,20 @@ function renderSetup(joke){
     jokeDelivery = joke.delivery
 }
 
-newJoke.addEventListener("submit", (e)=> {
+catagorySelector.addEventListener("submit",(e)=> {
     e.preventDefault()
-    startJoke()
+    if(e.target.cat.value){
+        startJoke(e.target.cat.value)
+    }else{
+        startJoke()
+    }
 })
+
+
+// newJoke.addEventListener("submit", (e)=> {
+//     e.preventDefault()
+//     startJoke(e.target.cat.value\\)
+// })
 
 userForm.addEventListener("submit", (e)=>addUserToJson(e))
 
@@ -185,6 +200,7 @@ const voteContainer = document.getElementById("voting-container");
 function renderAllJokes(data){
     let onlyTen = [...data].slice(-10).reverse();
     onlyTen.forEach(jokeObj => renderJoke(jokeObj));
+   
 }
 
 function renderJoke(jokeObj){
