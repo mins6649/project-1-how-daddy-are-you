@@ -5,13 +5,20 @@ Ghost White: F7F5FB
 COYOTE: 7C6354
 BERKELY BLUE: 12355B */
 *{
-    font-family: 'Fira Sans', sans-serif;}
+    font-family: 'Fira Sans', sans-serif;
+}
 body {
 
     /* font-family: Lato, sans-serif; */
     background-color: #DC965A;
 }
 h1{
+    font-family: 'Shrikhand', cursive;
+    font-size: 60px;
+    color: #12355B;
+    margin-bottom: 0%;
+}
+#ryanReynolds{
     font-family: 'Shrikhand', cursive;
     font-size: 60px;
     color: #12355B;
@@ -69,19 +76,21 @@ th {
     background-color: #DC965A;
 }
 
+table {
+    border-collapse: collapse;
+}
+
 tr:hover{
     background-color: #F7F5FB;
 }
 
 td {
-    height: 75px;
     text-align: left;
     border-color: #F7F5FB;
 }
 
 img {
-    width: 75px;
-    height: 75px;
+    display: block;
 }
 
 #daddy-says-container {
@@ -177,7 +186,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    cursor: url('static/PhotoRoom_20230214_180624.png'), auto;
 }
 
 #user-joke-container{
@@ -185,7 +194,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    cursor: url('static/PhotoRoom_20230214_180624.png'), auto;
 }
 
 .name-title{
@@ -303,3 +312,38 @@ input[type="radio"] {
     border-color: #12355B;
     background-color: #F7F5FB;
   }
+
+#recent-scores-title {
+    cursor: url('src/Breadstick.png'), auto;
+}
+
+/* EASTER EGG */
+#oliveGardenLink{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+#oliveGarden{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 130px;
+}
+#ryanReynoldsLink{
+    font-family: 'Shrikhand', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: #12355B;
+    text-align: center;
+}
+#ryanReynoldsPic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 130px;
+    height: 150px;
+}

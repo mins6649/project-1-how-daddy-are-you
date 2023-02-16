@@ -106,15 +106,15 @@ function sortMatches() {
 
     //set image arrays
     const winnerImageArray = [
-        "https://i.ebayimg.com/images/g/Cm4AAOSws7dibBwZ/s-l500.jpg",
-        "https://i.pinimg.com/236x/97/bf/05/97bf0588f1b996b1137f0cc5a3d66662.jpg",
-        "https://i.etsystatic.com/10980000/r/il/1a7883/2445227071/il_570xN.2445227071_qizg.jpg"
+        "./static/the-godfather.jpeg",
+        "./static/george-clooney.jpeg",
+        "./static/red-forman.jpeg"
 
     ];
     const loserImageArray = [
-        "https://i.pinimg.com/236x/1f/40/03/1f4003a4b9924c0b213b0af324f387c3.jpg",
-        "https://teehandy.com/wp-content/uploads/2022/06/t1-206.jpg",
-        "https://cdn.spotlightstories.co/wp-content/uploads/2019/08/08002854/vincevaughn.jpg"
+        "./static/landfill.png",
+        "./static/dumpster-fire.jpg",
+        "./static/garbage-can.png"
     ];
 
     appendScoreboard(winnerArray, document.getElementById('high-scores'), winnerImageArray);
@@ -172,9 +172,10 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
             daddySaysUserResponse.textContent = ``
             daddySaysLikes.textContent = ``
             }
+            oliveGardenEasterEgg.innerText = "";
+            ryanReynoldsEasterEgg.innerText = "";
+                  
         }
-        
-
     }
 }
 
@@ -277,3 +278,49 @@ function updateLikes(jokeObj){
     })
     .then(res => res.json())
 }
+
+//EASTER EGGS
+const daddySays = document.getElementById("daddy-says-container");
+const recentScoresTitle = document.getElementById("recent-scores-title");
+const oliveGardenEasterEgg = document.createElement("div");
+const daddyTitle = document.getElementById("ryanReynolds");
+const ryanReynoldsEasterEgg = document.createElement("div");
+
+recentScoresTitle.addEventListener("click", oliveGarden);
+daddyTitle.addEventListener("click", ryanReynolds);
+
+function oliveGarden(){
+    let picture = document.createElement("img")
+    let link = document.createElement("a")
+    link.href = "https://www.olivegarden.com/home"
+    link.textContent = "Your answer was too boring. This is where you belong:"
+    picture.src ="https://www.kark.com/wp-content/uploads/sites/85/2021/12/OliveGardenGettyImages-1326009258.jpg?w=1280&h=720&crop=1";
+    
+    link.id = "oliveGardenLink";
+    picture.id = "oliveGarden";
+    
+    link.appendChild(picture)
+    oliveGardenEasterEgg.appendChild(link);
+    daddySays.append(oliveGardenEasterEgg);  
+    //needs to only click once
+}
+
+function ryanReynolds(){
+    let picture = document.createElement("img");
+    let link = document.createElement("a");
+
+    link.href = "https://ryan-reynolds.net/"
+    link.textContent = "Daddy"
+    picture.src = "https://ntvb.tmsimg.com/assets/assets/57282_v9_bc.jpg?w=270&h=360";
+  
+    link.id = "ryanReynoldsLink";
+    picture.id = "ryanReynoldsPic";
+    
+    ryanReynoldsEasterEgg.append(picture, link);
+    daddySays.appendChild(ryanReynoldsEasterEgg);
+}
+
+
+
+
+
