@@ -314,7 +314,10 @@ input[type="radio"] {
   }
 
 #recent-scores-title {
-    cursor: url('src/Breadstick.png'), auto;
+    cursor: url('./static/Breadstick.png'), auto;
+}
+#ryanReynolds{
+    cursor: url("./static/heart.png"), auto;
 }
 
 /* EASTER EGG */
