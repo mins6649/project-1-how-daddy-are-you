@@ -104,7 +104,7 @@
       "cpuResponse": "It really hurt my head.",
       "cpuLikes": 3,
       "userResponse": "LOVES TO CODE",
-      "userLikes": 0,
+      "userLikes": 3,
       "username": "NICK",
       "id": 12
     },
@@ -120,18 +120,18 @@
     {
       "prompt": "The other day my wife asked me to pass her lipstick, but I accidentally gave her a glue stick.",
       "cpuResponse": "She still isn't talking to me.",
-      "cpuLikes": 1,
+      "cpuLikes": 3,
       "userResponse": "we are now divorced.",
-      "userLikes": 3,
+      "userLikes": 5,
       "username": "mike",
       "id": 14
     },
     {
       "prompt": "The past, the present and the future walk into a bar.",
       "cpuResponse": "It was tense.",
-      "cpuLikes": 1,
+      "cpuLikes": 2,
       "userResponse": "dont drink",
-      "userLikes": 1,
+      "userLikes": 2,
       "username": "ivy",
       "id": 15
     },
@@ -185,7 +185,7 @@
       "cpuResponse": "It has an ex axis and a why axis.",
       "cpuLikes": 1,
       "userResponse": "Why the hell would u do that",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "Robert Pattinson",
       "id": 21
     },
@@ -206,6 +206,87 @@
       "userLikes": 1,
       "username": "Santa Clause",
       "id": 23
+    },
+    {
+      "prompt": "What kind of doctor is Dr. Pepper?",
+      "cpuResponse": "He's a fizzician.",
+      "cpuLikes": 1,
+      "userResponse": "One that appreciated spice in his life.",
+      "userLikes": 0,
+      "username": "Bad Dad",
+      "id": 24
+    },
+    {
+      "prompt": "I can't believe I got fired from the calendar factory.",
+      "cpuResponse": "All I did was take a day off.",
+      "cpuLikes": 0,
+      "userResponse": "I have a date, always xoxo",
+      "userLikes": 1,
+      "username": "Nick",
+      "id": 25
+    },
+    {
+      "prompt": "No matter how kind you are...",
+      "cpuResponse": "German kids are always Kinder.",
+      "cpuLikes": 0,
+      "userResponse": "you'll never be nicer than Michelle (-: <3",
+      "userLikes": 0,
+      "username": "Min",
+      "id": 26
+    },
+    {
+      "prompt": "What do you call a deer with no eyes?",
+      "cpuResponse": "No eye deer.",
+      "cpuLikes": 0,
+      "userResponse": "dead.",
+      "userLikes": 0,
+      "username": "Michael",
+      "id": 27
+    },
+    {
+      "prompt": "Did you hear about the claustrophobic astronaut?",
+      "cpuResponse": "He just needed a little space.",
+      "cpuLikes": 1,
+      "userResponse": "Why is he on a space ship?",
+      "userLikes": 1,
+      "username": "Joe",
+      "id": 28
+    },
+    {
+      "prompt": "What's the difference between a poorly dressed man on a unicycle and a well dressed man on a bicycle?",
+      "cpuResponse": "Attire.",
+      "cpuLikes": 0,
+      "userResponse": "huh",
+      "userLikes": 0,
+      "username": "Mike",
+      "id": 29
+    },
+    {
+      "prompt": "Why do cows wear bells?",
+      "cpuResponse": "Because their horns don't work!",
+      "cpuLikes": 0,
+      "userResponse": "I would like to know as well",
+      "userLikes": 0,
+      "username": "Cow",
+      "id": 30
+    },
+    {
+      "prompt": "Thank you student loans for getting me through college.",
+      "cpuResponse": "I don't think I'll ever be able to repay you.",
+      "cpuLikes": 0,
+      "userResponse": "I think only you feel this way",
+      "userLikes": 0,
+      "username": "Bell",
+      "id": 31
+    },
+    {
+      "prompt": "Has COVID-19 forced you to wear glasses and a mask at the same time?",
+      "cpuResponse": "If so, you may be entitled to condensation.",
+      "cpuLikes": 0,
+      "userResponse": "No bc i have perfect eye sight. #blessed",
+      "userLikes": 0,
+      "username": "Damien",
+      "id": 32
     }
   ]
 }

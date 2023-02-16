@@ -24,9 +24,14 @@ h2{
     margin-top: 0%;
     margin-bottom: 50px;
 }
-
+.create-joke{
+    z-index: 1;
+}
 #setup{
+    text-align: center;
     font-size: 30px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .scoreboard-container {
@@ -90,7 +95,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
-    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
+    position: fixed;
+    text-align: center;
+
 }
 
 h4 {
@@ -138,15 +145,12 @@ input {
  cursor: pointer;
 }
 #daddy {
+    z-index: -1;
     height: auto;
     width: auto;
-    position: absolute;
+    position:absolute;
     top: 0px;
-}
-
-#setup {
-    max-width: 200px;
-    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 /* RENDERED JOKE SECTION: */
@@ -173,6 +177,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
+    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
 }
 
 #user-joke-container{
@@ -180,6 +185,7 @@ input {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
+    cursor: url('src/PhotoRoom_20230214_180624.png'), auto;
 }
 
 .name-title{
@@ -259,9 +265,11 @@ input {
 #daddy-says-user-response{
     font-size: 20px;
     text-align: center;
-    margin: 0%;
+    margin-top: 15px;
 }
 #daddy-says-prompt{
+    margin: 0 auto;
+    max-width: 325px;
     text-align: center;
     font-size: 20px;
     margin: 0%;
@@ -270,7 +278,7 @@ input {
     font-family: 'Shrikhand', cursive;
     color: #12355B;
     font-size: 20px;
-    margin: 0%;
+    margin-top: 15px;
     text-align: center;
 }
 
@@ -279,9 +287,5 @@ input {
     color: #7C6354;
     font-size: 20px;
     margin: 0%;
-    text-align: center;
-}
-#daddy-says-container{
-    position: fixed;
     text-align: center;
 }
