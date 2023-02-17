@@ -68,6 +68,7 @@ function addUserToJson(e){
     .then(data =>{
         let element = createElement(data);
         voteContainer.prepend(element);
+        startJoke()
 
         if (voteContainer.children[10]) {
             voteContainer.children[10].remove();
