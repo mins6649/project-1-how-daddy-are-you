@@ -68,16 +68,16 @@
       "cpuResponse": "But on Halloween he went to tell the neighbors to turn down their TV and they gave him some candy.",
       "cpuLikes": 0,
       "userResponse": "...but he got his mother's genes.",
-      "userLikes": 0,
+      "userLikes": 4,
       "username": "Dad",
       "id": 8
     },
     {
       "prompt": "Why did the ghost go inside the bar?",
       "cpuResponse": "For the boos.",
-      "cpuLikes": 0,
+      "cpuLikes": 1,
       "userResponse": "Cuz he wanted some boooooze.",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "Nick",
       "id": 9
     },
@@ -86,7 +86,7 @@
       "cpuResponse": "Goodbye, world!",
       "cpuLikes": 0,
       "userResponse": "life.reset()",
-      "userLikes": 0,
+      "userLikes": 1,
       "username": "Bobby",
       "id": 10
     },
