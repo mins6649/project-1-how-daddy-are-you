@@ -6,11 +6,9 @@ jsonData=[]
 startJoke()
 
 function startJoke(cat="Misc"){
-    console.log(cat)
 fetch (`https://v2.jokeapi.dev/joke/${cat}?format=json&safe-mode&type=twopart`)
 .then ((res)=> res.json())
 .then ((joke) => {
-    console.log(joke)
     renderSetup(joke)
 })
 }
@@ -71,7 +69,9 @@ function addUserToJson(e){
         let element = createElement(data);
         voteContainer.prepend(element);
 
-        voteContainer.children[10].remove();
+        if (voteContainer.children[10]) {
+            voteContainer.children[10].remove();
+        } 
     })
     userForm.reset()
 }
@@ -124,7 +124,7 @@ function sortMatches() {
 
 function appendScoreboard(scoreArray, element, imageArray = []) {
     //the over-arching loop to create three rows 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 3 && i < scoreArray.length; i++) {
         const styleDiv = document.createElement('div')
         const newRow = document.createElement('tr')
         styleDiv.appendChild(newRow)
