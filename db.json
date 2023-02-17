@@ -206,6 +206,24 @@
       "userLikes": 1,
       "username": "Santa Clause",
       "id": 23
+    },
+    {
+      "prompt": "What's the difference between a hot potato and a flying pig?",
+      "cpuResponse": "One's a heated yam, the other's a yeeted ham.",
+      "cpuLikes": 0,
+      "userResponse": "Blankets ",
+      "userLikes": 0,
+      "username": "Grossi",
+      "id": 24
+    },
+    {
+      "prompt": "What is the least spoken language in the world?",
+      "cpuResponse": "Sign language.",
+      "cpuLikes": 0,
+      "userResponse": "Cunnalingus",
+      "userLikes": 1,
+      "username": "Eliza ",
+      "id": 25
     }
   ]
 }
