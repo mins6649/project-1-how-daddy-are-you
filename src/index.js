@@ -5,13 +5,18 @@ jsonData=[]
 
 startJoke()
 
-function startJoke(){
-fetch ("https://v2.jokeapi.dev/joke/pun?format=json&safe-mode&type=twopart")
+function startJoke(cat="Misc"){
+    console.log(cat)
+fetch (`https://v2.jokeapi.dev/joke/${cat}?format=json&safe-mode&type=twopart`)
 .then ((res)=> res.json())
-.then ((joke) => 
-    renderSetup(joke))
+.then ((joke) => {
+    console.log(joke)
+    renderSetup(joke)
+})
 }
 
+
+const catagorySelector = document.querySelector("#catagory-selector")
 const jokeSetup = document.querySelector("#setup")
 const newJoke = document.querySelector("#newJoke")
 const userForm = document.querySelector("#user-punchline-form")
@@ -22,10 +27,20 @@ function renderSetup(joke){
     jokeDelivery = joke.delivery
 }
 
-newJoke.addEventListener("submit", (e)=> {
+catagorySelector.addEventListener("submit",(e)=> {
     e.preventDefault()
-    startJoke()
+    if(e.target.cat.value){
+        startJoke(e.target.cat.value)
+    }else{
+        startJoke()
+    }
 })
+
+
+// newJoke.addEventListener("submit", (e)=> {
+//     e.preventDefault()
+//     startJoke(e.target.cat.value\\)
+// })
 
 userForm.addEventListener("submit", (e)=>addUserToJson(e))
 
@@ -158,6 +173,7 @@ function appendScoreboard(scoreArray, element, imageArray = []) {
             daddySaysLikes.textContent = ``
             }
             oliveGardenEasterEgg.innerText = "";
+            ryanReynoldsEasterEgg.innerText = "";
                   
         }
     }
@@ -184,6 +200,7 @@ const voteContainer = document.getElementById("voting-container");
 function renderAllJokes(data){
     let onlyTen = [...data].slice(-10).reverse();
     onlyTen.forEach(jokeObj => renderJoke(jokeObj));
+   
 }
 
 function renderJoke(jokeObj){
@@ -266,22 +283,50 @@ function updateLikes(jokeObj){
 const daddySays = document.getElementById("daddy-says-container");
 const recentScoresTitle = document.getElementById("recent-scores-title");
 const oliveGardenEasterEgg = document.createElement("div");
+const daddyTitle = document.getElementById("ryanReynolds");
+const ryanReynoldsEasterEgg = document.createElement("div");
 
 recentScoresTitle.addEventListener("click", oliveGarden);
+daddyTitle.addEventListener("click", ryanReynolds);
 
-function oliveGarden(e){
-    //e.stopPropagation();
+function oliveGarden(){
+    oliveGardenEasterEgg.innerText = "";
     let picture = document.createElement("img")
     let link = document.createElement("a")
     link.href = "https://www.olivegarden.com/home"
     link.textContent = "Your answer was too boring. This is where you belong:"
     picture.src ="https://www.kark.com/wp-content/uploads/sites/85/2021/12/OliveGardenGettyImages-1326009258.jpg?w=1280&h=720&crop=1";
+    
     link.id = "oliveGardenLink";
     picture.id = "oliveGarden";
-    oliveGardenEasterEgg.append(link, picture);
+    
+    link.appendChild(picture)
+    oliveGardenEasterEgg.appendChild(link);
     daddySays.append(oliveGardenEasterEgg);  
+    //needs to only click once
 }
 
+function ryanReynolds(){
+    ryanReynoldsEasterEgg.innerText = "";
+    let picture = document.createElement("img");
+    let link = document.createElement("a");
 
+    link.href = "https://ryan-reynolds.net/"
+    link.textContent = "Daddy"
+    picture.src = "https://ntvb.tmsimg.com/assets/assets/57282_v9_bc.jpg?w=270&h=360";
+  
+    link.id = "ryanReynoldsLink";
+    picture.id = "ryanReynoldsPic";
+    
+    ryanReynoldsEasterEgg.append(picture, link);
+    daddySays.appendChild(ryanReynoldsEasterEgg);
+}
+
+daddyTitle.addEventListener("mouseover", () =>{
+    oliveGardenEasterEgg.innerText = "";
+})
+recentScoresTitle.addEventListener("mouseover", () =>{
+    ryanReynoldsEasterEgg.innerText = "";
+})
 
 
