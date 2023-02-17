@@ -152,6 +152,15 @@
       "userLikes": 0,
       "username": "Min",
       "id": 17
+    },
+    {
+      "prompt": "Why was the mushroom always invited to parties?",
+      "cpuResponse": "Cause he's a fungi.",
+      "cpuLikes": 0,
+      "userResponse": "Cause they were a Fun-guy",
+      "userLikes": 0,
+      "username": "Nick",
+      "id": 18
     }
   ]
 }
